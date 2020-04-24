@@ -32,13 +32,13 @@ There are, so far, the following profiles
 #### Personal mac
 
 ```sh
-./install-profile mac mac-personal
+./install-profile mac && ./install-profile mac-personal
 ```
 
 #### Work Mac
 
 ```sh
-./install-profile mac mac-cloud
+./install-profile prereqs-corp-mac && ./install-profile mac && ./install-profile cloud-mac
 ```
 
 #### mackup
