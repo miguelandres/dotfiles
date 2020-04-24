@@ -6,3 +6,6 @@
 - clean: ['~']
 - create:
     - ~/.zshrc-imports
+- shell:
+  - git submodule update --init --recursive -j 8
+

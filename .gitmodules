@@ -1,11 +1,3 @@
 [submodule "dotbot"]
 	path = meta/dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "zsh/custom/alias-tips"]
-	path = zsh/custom/alias-tips
-	url = git@github.com:djui/alias-tips.git
-	branch = master
-[submodule "zsh/custom/zsh-completions"]
-	path = zsh/custom/zsh-completions
-	url = git@github.com:zsh-users/zsh-completions.git
-	branch = master

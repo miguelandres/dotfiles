@@ -1,4 +1,4 @@
-alias refresh-dotfiles='zsh -c "cd ~/.dotfiles/ && git pull && ./install-profile prereqs-glinux && ./install-profile linux && ./install-profile glinux"'
+alias refresh-dotfiles='zsh -c "cd ~/.dotfiles/ && git pull --recurse-submodules && ./install-profile prereqs-glinux && ./install-profile linux && ./install-profile glinux"'
 
 
 # google3 prompt

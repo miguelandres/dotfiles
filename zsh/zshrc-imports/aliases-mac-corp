@@ -1,1 +1,1 @@
-alias refresh-dotfiles='zsh -c "cd ~/.dotfiles/ && git pull && ./install-profile prereqs-corp-mac && ./install-profile mac && ./install-profile mac-corp && ./install-profile cloud-mac"'
+alias refresh-dotfiles='zsh -c "cd ~/.dotfiles/ && git pull --recurse-submodules && ./install-profile prereqs-corp-mac && ./install-profile mac && ./install-profile mac-corp && ./install-profile cloud-mac"'

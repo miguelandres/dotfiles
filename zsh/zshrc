@@ -63,9 +63,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-fpath=($HOME/.dotfiles/zsh/custom/zsh-completions/src $fpath)
-
-plugins=(alias-tips common-aliases copydir extract fancy-ctrl-z fasd git history jsontools tmux zsh-completions zsh-interactive-cd
+plugins=(common-aliases copydir extract fancy-ctrl-z fasd git history jsontools tmux zsh-interactive-cd
  zsh_reload)
 for file in ~/.zshrc-imports/plugins/.*; do
   source "$file"
@@ -98,7 +96,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
 
 for file in ~/.zshrc-imports/.*; do
   source "$file"

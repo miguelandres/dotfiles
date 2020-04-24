@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 cask_args appdir: '/Applications'
 
+brew "fzf"
 brew "go"
 brew "graphviz"
 brew "mackup"

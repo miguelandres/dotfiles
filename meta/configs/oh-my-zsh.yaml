@@ -6,7 +6,3 @@
 - link:
     ~/.zshrc: zsh/zshrc
     ~/.oh-my-zsh/custom: zsh/custom
-    
-- shell:
-  - description: rebuild zcompdump, see https://github.com/zsh-users/zsh-completions#manual-installation
-    command: rm -f ~/.zcompdump; compinit
