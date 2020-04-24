@@ -38,14 +38,14 @@ There are, so far, the following profiles
 #### Work Mac
 
 ```sh
-./install-profile prereqs-corp-mac && ./install-profile mac && ./install-profile cloud-mac
+./install-profile prereqs-corp-mac && ./install-profile mac && ./install-profile mac-corp && ./install-profile cloud-mac
 ```
 
 #### mackup
 
 After Google Drive is configured, you can run the following command to sync application configuration
 ```sh
-./install-standalone mackup
+refresh-mackup
 ```
 
 ### Linux
@@ -60,3 +60,8 @@ On my Corp linux:
 ```sh
 ./install-profile glinux
 ```
+
+
+## Refresh configuration
+
+At any time after first sucessful installation you can invoke `refresh-dotfiles` to sync everything and `refresh-mackup` to sync mackup only. Both will involve a `git pull` and running the respective commands for the correct platform
