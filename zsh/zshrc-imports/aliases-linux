@@ -1,0 +1,14 @@
+# better zz from fasd
+unalias zz
+function zz() {
+  local dir
+  dir="$(fasd -Rdl "$*" | fzf --query="$*" -1 -0 --no-sort +m)" && cd "${dir}" || return 1
+}
+
+
+# Usage: fv file pattern
+function fv() {
+  local file
+  file="$(fzf --exact --height 40% --reverse --query="$1"  --select-1 --exit-0)"
+  [[ -n "$file" ]] && vim "$file"
+}

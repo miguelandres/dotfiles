@@ -1,1 +1,40 @@
 alias refresh-dotfiles='zsh -c "cd ~/.dotfiles/ && git pull && ./install-profile prereqs-glinux && ./install-profile linux && ./install-profile glinux"'
+
+
+# google3 prompt
+
+google3_prompt_info() {
+  if [[ $PWD =~ '/google/src/cloud/[^/]+/(.+)/google3(.*)' ]]; then
+    # Use CitC client names as window titles in screen/tmux
+    print -n "\e]2;${match[1]}\a" >/dev/tty
+
+    print -r -- "%F{yellow}($match[1]) %F{green}//${match[2]#/}"
+  else
+    print -r -- "%F{green}$PWD"
+  fi
+}
+
+setopt prompt_subst  # enable command substitution (and other expansions) in PROMPT
+PROMPT='$(google3_prompt_info)%f %# '  # %f for stopping the foreground color
+
+
+# quick switch to blaze-bin and back
+
+function bb() {
+  if [[ $PWD =~ '(.*)/blaze-bin(.*)' ]]; then
+    cd "${match[1]}${match[2]}"
+  else
+    cd "${PWD/\/google3//google3/blaze-bin}"
+  fi
+}
+
+
+# quick switch between google3/java and google3/javatests
+
+function jt() {
+    if [[ $PWD =~ '(.*)/javatests(.*)' ]]; then
+        cd "${match[1]}/java${match[2]}"
+    else
+        cd "${PWD/\/google3\/java//google3/javatests}"
+    fi
+}
