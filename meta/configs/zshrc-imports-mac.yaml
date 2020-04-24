@@ -1,0 +1,3 @@
+- links
+    - "~/.zshrc-imports/.zshrc-mac": "zsh/zshrc-imports/zshrc-mac"
+    - "~/.zshrc-imports/.aliases-mac": "zsh/zshrc-imports/aliases-mac"
