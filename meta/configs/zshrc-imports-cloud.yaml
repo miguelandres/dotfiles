@@ -1,2 +1,2 @@
-- links
-    - "~/.zshrc-imports/.zshrc-cloud": "zsh/zshrc-imports/zshrc-cloud"
+- link:
+    ~/.zshrc-imports/.zshrc-cloud: zsh/zshrc-imports/zshrc-cloud

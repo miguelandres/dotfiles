@@ -1,3 +1,3 @@
-- links
-    - "~/.zshrc-imports/.zshrc-glinux": "zsh/zshrc-imports/zshrc-glinux"
-    - "~/.zshrc-imports/.aliases-glinux": "zsh/zshrc-imports/aliases-glinux"
+- link:
+    ~/.zshrc-imports/.zshrc-glinux: zsh/zshrc-imports/zshrc-glinux
+    ~/.zshrc-imports/.aliases-glinux: zsh/zshrc-imports/aliases-glinux

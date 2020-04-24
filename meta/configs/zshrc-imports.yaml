@@ -1,2 +1,2 @@
-- links
-    - "~/.zshrc-imports/.aliases": "zsh/zshrc-imports/aliases"
+- link:
+    ~/.zshrc-imports/.aliases: zsh/zshrc-imports/aliases
