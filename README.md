@@ -2,6 +2,12 @@
 
 This repo uses anishathalye/dotbot for configuring my dotfiles and other utilities.
 
+## Getting started
+
+```sh
+git clone git@github.com:miguelandres/dotfiles.git .dotfiles/
+```
+
 ## Profiles and configs
 
 Since my dotfiles vary slightly between linux and mac, and whether this is personal or a work computer, I use a [more complicated system than the default](https://github.com/anishathalye/dotbot/wiki/Tips-and-Tricks#more-advanced-setup)
