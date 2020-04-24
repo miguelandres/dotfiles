@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+name = miguelandres
+email = miguelandres@users.noreply.github.com
+
+# Force ssh to github
+[url "git@github.com:"]
+pushInsteadOf = https://github.com/
+
