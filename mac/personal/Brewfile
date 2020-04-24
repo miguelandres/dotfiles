@@ -1,10 +1,8 @@
 # Brewfile
 # Install `mas' before going forward
-
-brew "cask"
 brew "mas"
-tap homebrew/cask
-tap homebrew/cask-fonts
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 cask_args appdir: '/Applications'
 
 cask "obs"
