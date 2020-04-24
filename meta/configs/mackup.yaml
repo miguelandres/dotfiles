@@ -1,0 +1,6 @@
+- link:
+    ~/.mackup.cfg:
+      force: true
+      path: mackup/mackup.cfg
+- shell:
+    - mackup restore
