@@ -1,5 +1,5 @@
 - shell:
     - description: install cloud tools
-      command: bash -c "cd mac/cloud-tools && brew bundle --no-lock"
+      command: zsh -c "cd mac/cloud-tools && brew bundle --no-lock"
       stdout: true
       stdin: true
