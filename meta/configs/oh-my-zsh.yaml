@@ -5,4 +5,6 @@
     stdin: true
 - link:
     ~/.zshrc: zsh/zshrc
+    ~/.p10k.zsh: zsh/p10k.zsh
+    ~/.zshenv: zsh/zshenv
     ~/.oh-my-zsh/custom: zsh/custom

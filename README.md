@@ -5,7 +5,7 @@ This repo uses anishathalye/dotbot for configuring my dotfiles and other utiliti
 ## Getting started
 
 ```sh
-git clone git@github.com:miguelandres/dotfiles.git .dotfiles/
+git clone --recurse-submodules -j8 git@github.com:miguelandres/dotfiles.git .dotfiles/
 ```
 
 ## Profiles and configs
