@@ -1,5 +1,0 @@
-- shell:
-    - description: install homebrew formulas
-      command: bash -c "cd mac/ms-office/ && brew bundle"
-      stdout: true
-      stdin: true

@@ -1,11 +1,12 @@
 # Brewfile
 # Install `mas' before going forward
-brew "mas"
 
+brew "mas"
+tap homebrew/cask
+tap homebrew/cask-fonts
 cask_args appdir: '/Applications'
 
-
-cask "obs"
+cask "obs", force: true
 
 mas "Excel", id:462058435
 mas "OneDrive", id:823766827

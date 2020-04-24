@@ -1,4 +1,9 @@
 # Brewfile
+
+tap homebrew/cask
+tap homebrew/cask-fonts
+cask_args appdir: '/Applications'
+
 brew "kubernetes-cli"
 brew "terraform"
 cask "google-cloud-sdk"

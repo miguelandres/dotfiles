@@ -1,0 +1,5 @@
+- shell:
+  - description: install homebrew formula
+    command: bash -c "cd mac/personal/ && brew bundle --no-lock"
+    stdout: true
+    stdin: true
