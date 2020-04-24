@@ -1,5 +1,0 @@
-- shell:
-    - description: install homebrew formulas
-      command: bash -c "cd mac/personal/ && brew bundle"
-      stdout: true
-      stdin: true
