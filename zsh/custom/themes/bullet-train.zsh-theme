@@ -27,7 +27,6 @@ if [ ! -n "${BULLETTRAIN_PROMPT_ORDER+1}" ]; then
     perl
     ruby
     virtualenv
-    nvm
     aws
     go
     rust
