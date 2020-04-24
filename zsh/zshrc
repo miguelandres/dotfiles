@@ -63,8 +63,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(common-aliases copydir extract fancy-ctrl-z fasd git history jsontools tmux zsh-interactive-cd
- zsh_reload)
+plugins=(common-aliases copydir extract fancy-ctrl-z fasd git jsontools tmux zsh-interactive-cd)
 for file in ~/.zshrc-imports/plugins/.*; do
   source "$file"
 done
