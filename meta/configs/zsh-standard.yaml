@@ -1,5 +1,8 @@
 - shell:
-  - [chsh -s $(which zsh), Making zsh the default shell]
+  - command: '[ -n "$ZSH_VERSION" ] || chsh -s $(which zsh)'
+    description: Making zsh the default shell
+    stdin: true
+    stdout: true
 
 - link:
     ~/.zshrc: zsh/zshrc
