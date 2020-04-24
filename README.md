@@ -52,13 +52,13 @@ refresh-mackup
 #### Raspberry pi
 
 ```sh
-./install-profile linux
+./install-profile linux && ./install-profile linux-personal
 ```
 
 On my Corp linux:
 
 ```sh
-./install-profile glinux
+./install-profile prereqs-glinux && ./install-profile linux && ./install-profile glinux
 ```
 
 
