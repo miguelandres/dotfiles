@@ -1,5 +1,6 @@
 # Brewfile
-
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 cask_args appdir: '/Applications'
 
 brew "go"
@@ -8,15 +9,17 @@ brew "mackup"
 brew "mas"
 brew "tmux"
 
-cask "discord"
-cask "google-chrome"
-cask "google-backup-and-sync"
-cask "iterm2"
-cask "slack"
-cask "spotify"
-cask "steam"
-cask "visual-studio-code"
-cask "vlc"
+cask "font-source-code-pro-for-powerline", force:true
+
+cask "discord", force:true
+cask "google-chrome" , force:true
+cask "google-backup-and-sync", force:true
+cask "iterm2", force:true
+cask "slack", force:true
+cask "spotify", force:true
+cask "steam", force:true
+cask "visual-studio-code", force:true
+cask "vlc", force:true
 
 mas "BetterSnapTool", id:417375580
 mas "Dashlane", id:552383089
