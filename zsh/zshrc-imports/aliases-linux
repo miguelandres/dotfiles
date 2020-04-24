@@ -1,5 +1,4 @@
 # better zz from fasd
-unalias zz
 function zz() {
   local dir
   dir="$(fasd -Rdl "$*" | fzf --query="$*" -1 -0 --no-sort +m)" && cd "${dir}" || return 1
