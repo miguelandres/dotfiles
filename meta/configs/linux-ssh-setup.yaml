@@ -11,6 +11,9 @@
     command: 'ssh-add ~/.ssh/id_rsa'
   - description: 'Copy the SSH key into https://github.com/settings/keys.'
     command: 'cat ~/.ssh/id_rsa.pub'
+    quiet: false
+    stdin: true
+    stdout: true
 - link:
     ~/.ssh/config: 
       force: true

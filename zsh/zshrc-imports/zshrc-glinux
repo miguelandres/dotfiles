@@ -1,8 +1,7 @@
+# include ~/bin in path so we can wrap git for performance in citc
 export PATH="$HOME/bin:$PATH"
 
-
 # Enable piper completion
-
 if [[ -f /etc/bash_completion.d/g4d ]]; then
   . /etc/bash_completion.d/p4
   . /etc/bash_completion.d/g4d
