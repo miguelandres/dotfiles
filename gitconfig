@@ -5,5 +5,5 @@ email = miguelandres@users.noreply.github.com
 
 # Force ssh to github
 [url "git@github.com:"]
-insteadOf = https://github.com/
+pushInsteadOf = https://github.com/
 
