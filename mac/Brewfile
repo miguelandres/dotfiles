@@ -9,6 +9,7 @@ brew "graphviz"
 brew "mackup"
 brew "mas"
 brew "tmux"
+brew "zsh"
 
 # Commented since it's not installing correctly rn
 # cask "font-source-code-pro-for-powerline"
