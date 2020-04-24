@@ -1,11 +1,13 @@
 # Brewfile
 brew "go"
 brew "graphviz"
+brew "mackup"
 brew "mas"
 brew "tmux"
 
 cask "discord"
 cask "google-chrome"
+cask "google-backup-and-sync"
 cask "iterm2"
 cask "obs"
 cask "slack"
