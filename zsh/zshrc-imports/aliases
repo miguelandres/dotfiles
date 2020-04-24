@@ -1,0 +1,4 @@
+alias src="cd ~/src"
+
+# Get week number
+alias week='date +%V'
