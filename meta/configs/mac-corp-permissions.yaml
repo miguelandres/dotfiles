@@ -1,0 +1,5 @@
+- shell:
+  - description: changing permissions for /usr/local/bin, horrible hack for brew
+    command: sudo chown miguely /usr/local/bin
+    stdout: true
+    stdin: true

@@ -8,10 +8,10 @@
     stdout: true
     stdin: true
   - description: Adding private key to SSH agent
-    command: 'ssh-add -K ~/.ssh/id_rsa'
+    command: 'ssh-add ~/.ssh/id_rsa'
   - description: 'Copy the SSH key into https://github.com/settings/keys. Already in the clipboard.'
     command: 'pbcopy < ~/.ssh/id_rsa.pub'
 - link:
     ~/.ssh/config: 
       force: true
-      path: ssh/mac-config
+      path: ssh/mac-config-corp
