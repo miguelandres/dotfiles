@@ -1,4 +1,6 @@
 oh-my-zsh
 zsh-standard
+zshrc-imports
+mac-zshrc-imports
 brew
 brewfile

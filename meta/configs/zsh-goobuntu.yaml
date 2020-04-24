@@ -1,6 +1,0 @@
-- shell:
-  - [prodaccess, Getting LOAS credentials]
-  - [ganpati2 user edit --id=$USER.corp --corp_shell=`which zsh` --approve_now=true, Changing shell]
-
-- link:
-    ~/.zshrc: zsh/zshrc

@@ -4,3 +4,5 @@
       create: true
       relink: true
 - clean: ['~']
+- create:
+    - ~/.zshrc-imports
