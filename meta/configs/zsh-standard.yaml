@@ -1,0 +1,5 @@
+- shell:
+  - [chsh -s $(which zsh), Making zsh the default shell]
+
+- link:
+    ~/.zshrc: zsh/zshrc

@@ -1,0 +1,30 @@
+# Brewfile
+brew "go"
+brew "graphviz"
+brew "mas"
+brew "tmux"
+
+cask "discord"
+cask "google-chrome"
+cask "iterm2"
+cask "obs"
+cask "slack"
+cask "spotify"
+cask "steam"
+cask "visual-studio-code"
+cask "vlc"
+
+mas "BetterSnapTool", id:417375580
+mas "Dashlane", id:552383089
+mas "Facebook Messenger", id:1480068668
+mas "GoodNotes", id:1480793815
+mas "Kakaotalk", id:869223134
+mas "LINE", id:539883307
+mas "Microsoft OneNote", id:784801555
+mas "Parcel", id:639968404
+mas "Slack", id:803453959
+mas "Theine", id:955848755
+mas "Things", id:904280696
+mas "Twitter", id:1482454543
+mas "Wechat", id:836500024
+mas "Whatsapp", id:1147396723
