@@ -1,5 +1,5 @@
 - shell:
     - description: install homebrew
-      command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      command: '[[ $(command -v brew) != "" ]] || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
       stdout: true
       stdin: true

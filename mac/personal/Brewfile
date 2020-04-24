@@ -1,0 +1,14 @@
+# Brewfile
+# Install `mas' before going forward
+brew "mas"
+
+cask_args appdir: '/Applications'
+
+
+cask "obs"
+
+mas "Excel", id:462058435
+mas "OneDrive", id:823766827
+mas "Outlook", id:985367838
+mas "PowerPoint", id:462062816
+mas "Word", id:462054704

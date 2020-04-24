@@ -14,7 +14,8 @@ There are, so far, the following profiles
   * adds standard zshrc imports for mac that improve integration with the system (and iTerm)
   * installs homebrew
   * installs a brewfile that includes all the Mac App Store apps, downloaded apps and brews I need for personal and work computers.
-* `mac-ms-office`: Installs office apps, cannot install on corp laptop.
+* `mac-personal`: Installs office apps, and other apps I cannot install on corp laptop.
+* `mac-cloud`: Installs gcloud, kubectl, docker and terraform. May the force be with you.
 * `linux`: vanilla linux installation of zsh, oh-my-zsh and standard imports
 * `glinux`: specific steps to set up zsh on my machine on glinux, and google specific imports. May move some of this off github.
 
@@ -25,18 +26,21 @@ There are, so far, the following profiles
 #### Personal mac
 
 ```sh
-./install-profile mac mac-ms-office
+./install-profile mac mac-personal
 ```
 
 #### Work Mac
 
 ```sh
-./install-profile mac
+./install-profile mac mac-cloud
 ```
 
 #### mackup
 
-NOTE: After Google Drive is configured, you can run `./install-standalone mackup`.
+After Google Drive is configured, you can run the following command to sync application configuration
+```sh
+./install-standalone mackup
+```
 
 ### Linux
 #### Raspberry pi
