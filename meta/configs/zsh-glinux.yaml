@@ -1,6 +1,7 @@
 - shell:
   - [prodaccess, Getting LOAS credentials]
-  - [ganpati2 user edit --id=$USER.corp --corp_shell=`which zsh` --approve_now=true, Changing shell]
+  - command: '[[ -n $(ganpati2 user show --id=$USER.corp | grep zsh) ]] || ganpati2 user edit --id=$USER.corp --corp_shell=`which zsh` --approve_now=true'
+    description: Changing shell
 
 - link:
     ~/.zshrc: zsh/zshrc
