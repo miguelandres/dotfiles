@@ -1,4 +1,7 @@
 # Brewfile
+
+cask_args appdir: '/Applications'
+
 brew "go"
 brew "graphviz"
 brew "mackup"
@@ -9,7 +12,6 @@ cask "discord"
 cask "google-chrome"
 cask "google-backup-and-sync"
 cask "iterm2"
-cask "obs"
 cask "slack"
 cask "spotify"
 cask "steam"
