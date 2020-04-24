@@ -1,3 +1,5 @@
 - link:
     ~/.zshrc-imports/.zshrc-glinux: zsh/zshrc-imports/zshrc-glinux
     ~/.zshrc-imports/.aliases-glinux: zsh/zshrc-imports/aliases-glinux
+    ~/.zshrc-imports/plugins/.glinux: zsh/zshrc-imports/plugins/glinux
+    
