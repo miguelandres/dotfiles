@@ -7,3 +7,5 @@ email = miguelandres@users.noreply.github.com
 [url "git@github.com:"]
 pushInsteadOf = https://github.com/
 
+[pull]
+	rebase = false
