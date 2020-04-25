@@ -72,7 +72,7 @@ refresh-mackup
 ./install-profile linux && ./install-profile linux-personal
 ```
 
-On my Corp linux:
+#### On my Corp linux:
 
 ```sh
 ./install-profile prereqs-glinux && ./install-profile linux && ./install-profile glinux
