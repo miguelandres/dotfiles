@@ -1,5 +1,5 @@
 - shell:
-  - sudo apt-get install fzf
-  - sudo apt-get install zsh-autosuggestions
+  - PACKAGE_TO_INSTALL=fzf; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get install $PACKAGE_TO_INSTALL
+  - PACKAGE_TO_INSTALL=zsh-autosuggestions; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get install $PACKAGE_TO_INSTALL
 
   

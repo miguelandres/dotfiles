@@ -1,5 +1,6 @@
 - shell:
-  - [prodaccess, Getting LOAS credentials]
+  - command: "[[ ! $(prodcertstatus --quiet --check_remaining_hours) ]] && prodaccess"
+    description: Getting LOAS credentials
   - command: '[[ -n $(ganpati2 user show --id=$USER.corp | grep zsh) ]] || ganpati2 user edit --id=$USER.corp --corp_shell=`which zsh` --approve_now=true'
     description: Changing shell
 
