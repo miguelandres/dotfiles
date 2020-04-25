@@ -16,7 +16,7 @@ Host *
   IdentityFile ~/.ssh/id_rsa
 EOF
 fi
-ssh-add -K ~/.ssh/id_rsa || ssh-add ~/.ssh/id_rsa 
+ssh-add -K ~/.ssh/id_rsa 2>/dev/null || ssh-add ~/.ssh/id_rsa 
 
 echo "Put the following key in your github account."
 cat ~/.ssh/id_rsa.pub
