@@ -6,3 +6,6 @@ if [[ -f /etc/bash_completion.d/g4d ]]; then
   . /etc/bash_completion.d/p4
   . /etc/bash_completion.d/g4d
 fi
+
+# tab completion for tmx2
+compdef tmx2=tmux
