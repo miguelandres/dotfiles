@@ -1,0 +1,5 @@
+- link:
+    ~/.zshrc-imports/.zshrc-mac-cloud: zsh/zshrc-imports/zshrc-mac-cloud
+    ~/.zshrc-imports/.aliases-mac-cloud: zsh/zshrc-imports/aliases-mac-cloud
+    ~/.zshrc-imports/plugins/.mac-cloud: zsh/zshrc-imports/plugins/mac-cloud
+    

@@ -1,5 +1,0 @@
-- link:
-    ~/.zshrc-imports/.zshrc-cloud: zsh/zshrc-imports/zshrc-cloud
-    ~/.zshrc-imports/.aliases-cloud: zsh/zshrc-imports/aliases-cloud
-    ~/.zshrc-imports/plugins/.cloud: zsh/zshrc-imports/plugins/cloud
-    
