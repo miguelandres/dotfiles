@@ -4,7 +4,25 @@ This repo uses anishathalye/dotbot for configuring my dotfiles and other utiliti
 
 ## Getting started
 
+
 ```sh
+ssh-keygen -t rsa -b 4096 -C "miguelandres@users.noreply.github.com" || exit 1
+eval "$(ssh-agent -s)"
+if [ `uname` -eq "Darwin" ] then
+  echo << EOF
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+EOF > ~/.ssh/config
+fi
+ssh-add -K ~/.ssh/id_rsa || ssh-add ~/.ssh/id_rsa 
+
+echo "Put the following key in your github account."
+cat ~/.ssh/id_rsa.pub
+
+read -p "Press enter when done"
+
 git clone --recurse-submodules -j8 git@github.com:miguelandres/dotfiles.git .dotfiles/
 ```
 
