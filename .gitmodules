@@ -5,3 +5,7 @@
 	path = zsh/custom/themes/powerlevel10k
 	url = git@github.com:romkatv/powerlevel10k.git
 	branch = master
+[submodule "zsh/custom/plugins/alias-tips"]
+	path = zsh/custom/plugins/alias-tips
+	url = git@github.com:djui/alias-tips.git
+	branch = master
