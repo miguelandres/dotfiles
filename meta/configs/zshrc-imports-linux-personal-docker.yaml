@@ -1,0 +1,4 @@
+- link:
+    ~/.zshrc-imports/.zshrc-linux-personal-docker: zsh/zshrc-imports/zshrc-linux-personal-docker
+    ~/.zshrc-imports/.aliases-linux-personal-docker: zsh/zshrc-imports/aliases-linux-personal-docker
+    ~/.zshrc-imports/plugins/.linux-personal-docker: zsh/zshrc-imports/plugins/linux-personal-docker
