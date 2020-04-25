@@ -13,9 +13,7 @@ brew "tmux"
 brew "zsh"
 brew "zsh-autosuggestions"
 
-# Commented since it's not installing correctly rn
-# cask "font-source-code-pro-for-powerline"
-cask "font-meslo-for-powerline"
+cask "font-meslolg-nerd-font"
 
 cask "discord"
 cask "google-chrome"
