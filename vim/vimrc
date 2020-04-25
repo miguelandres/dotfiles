@@ -1,0 +1,34 @@
+set nocompatible
+filetype off
+
+" syntax highlighting
+syntax on
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set textwidth=80
+
+" set UTF-8 encoding
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
+
+" use indentation of previous line
+set autoindent
+
+" use intelligent indentation for C
+set smartindent
+
+" turn syntax highlighting on
+set t_Co=256
+
+" turn line numbers on
+set number
+
+" highlight matching braces
+set showmatch
+
+" intelligent comments
+set comments=sl:/*,mb:\ *,elx:\ */
+
+filetype plugin indent on
