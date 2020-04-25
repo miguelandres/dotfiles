@@ -1,6 +1,6 @@
 - shell:
   - description: oh-my-zsh
-    command: '[ -v ZSH ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended'
+    command: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended || true'
     stdout: true
     stdin: true
 - link:
