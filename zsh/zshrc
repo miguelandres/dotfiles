@@ -80,6 +80,7 @@ done
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
+PATH="/usr/local/bin:$PATH"
 
 # User configuration
 
