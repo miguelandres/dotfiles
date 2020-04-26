@@ -1,7 +1,8 @@
-version: '2'
+version: '3'
 
 services:
   portainer:
+    userns_mode: 'host'
     container_name: portainer
     image: portainer/portainer
     command: -H unix:///var/run/docker.sock

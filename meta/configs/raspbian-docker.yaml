@@ -15,7 +15,6 @@
     stdin: true
     stdout: true
     stderr: true
-  - mkdir ~/docker
-  - chown dockremap:miguely ~/docker
+  - '( [[ ! -d ~/docker ]] && mkdir ~/docker && sudo chown dockremap:miguely ~/docker ) || true'
     
 
