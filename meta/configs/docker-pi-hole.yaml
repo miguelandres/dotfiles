@@ -1,15 +1,5 @@
 - shell:
-  - command:  '[[ $(docker -v) ]] || ( curl -fsSL https://get.docker.com -o /tmp/get-docker.sh && sudo sh /tmp/get-docker.sh )'
-    quiet: false
-    stdin: true
-    stdout: true
-    stderr: true
-  - command:  '[[ ! $(grep -q docker /etc/group) ]] || ( sudo groupadd docker )'
-    quiet: false
-    stdin: true
-    stdout: true
-    stderr: true
-  - command:  '[[ ! $(groups `whoami` | grep '\bdocker\b') ]] || ( sudo gpasswd -a `whoami` docker )'
+  - command:  'docker-compose -f ~/.dotfiles/docker/pi-hole/docker-compose.yml up -d'
     quiet: false
     stdin: true
     stdout: true
