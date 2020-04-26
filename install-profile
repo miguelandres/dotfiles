@@ -67,7 +67,6 @@ echo "${bold}Profiles: ${PROFILES_TO_INSTALL[*]}"
 
 for profile in ${PROFILES_TO_INSTALL[@]}
 do
-  echo "Listing configs for profile $profile"
   while IFS= read -r config
   do
     CONFIG_FILES+=("${BASE_DIR}/${META_DIR}/${CONFIGS_DIR}/${config}${CONFIG_SUFFIX}"); 

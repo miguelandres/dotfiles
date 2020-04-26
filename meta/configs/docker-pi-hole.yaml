@@ -1,6 +1,0 @@
-- shell:
-  - command:  'docker-compose -f ~/.dotfiles/docker/pi-hole/docker-compose.yml up -d'
-    quiet: false
-    stdin: true
-    stdout: true
-    stderr: true
