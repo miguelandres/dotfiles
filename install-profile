@@ -2,6 +2,9 @@
 
 set -e
 
+bold=$(tput bold)
+normal=$(tput sgr0)
+
 BASE_CONFIGS="base"
 EXECUTE_PULL=true
 SAVE_CONFIG=false
@@ -54,13 +57,13 @@ fi
 
 CONFIG_FILES=()
 IFS=',' read -ra BASE_CONFIGS_ARRAY <<< "$BASE_CONFIGS"
-echo "Base configs: ${BASE_CONFIGS_ARRAY[*]}"
+echo "${bold}Base configs: ${BASE_CONFIGS_ARRAY[*]}"
 for config in ${BASE_CONFIGS_ARRAY[@]}
 do
   CONFIG_FILES+=("${BASE_DIR}/${META_DIR}/${config}${CONFIG_SUFFIX}")
 done
 
-echo "Profiles: ${PROFILES_TO_INSTALL[*]}"
+echo "${bold}Profiles: ${PROFILES_TO_INSTALL[*]}"
 
 for profile in ${PROFILES_TO_INSTALL[@]}
 do
@@ -73,5 +76,6 @@ done
 
 for file in ${CONFIG_FILES[@]}
 do
+  echo "${bold}Processing file $file"
   "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "$file"
 done
