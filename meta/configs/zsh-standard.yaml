@@ -6,4 +6,6 @@
     quiet: false
 
 - link:
-    ~/.zshrc: zsh/zshrc
+    ~/.zshrc:
+      force: true
+      path: zsh/zshrc

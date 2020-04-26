@@ -6,3 +6,4 @@
 - clean: ['~', "~/.ssh/", "~/.vim/", "~/.zshrc-imports/", "~/.zshrc-imports/plugins/"]
 - create:
     - ~/.zshrc-imports
+    - ~/.zshrc-imports/plugins

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cd /home/miguely/.dotfiles
-/home/miguely/.dotfiles/install-profile --pull --base-configs=base linux raspbian-docker docker-home-server
+cd /usr/local/google/home/miguely/.dotfiles
+/usr/local/google/home/miguely/.dotfiles/install-profile --pull --base-configs=base,base-glinux linux glinux

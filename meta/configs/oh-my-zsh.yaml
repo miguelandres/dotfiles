@@ -4,7 +4,11 @@
     stdout: true
     stdin: true
 - link:
-    ~/.zshrc: zsh/zshrc
+    ~/.zshrc:
+      force: true
+      path: zsh/zshrc
     ~/.p10k.zsh: zsh/p10k.zsh
     ~/.zshenv: zsh/zshenv
-    ~/.oh-my-zsh/custom: zsh/custom
+    ~/.oh-my-zsh/custom:
+      force: true
+      path:  zsh/custom
