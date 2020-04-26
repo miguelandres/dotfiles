@@ -76,7 +76,7 @@ Each configuration is a list of base configs and a list of profiles to run. Thes
 #### Raspberry pi
 
 ```sh
-./install-profile --pull --save-config --base-configs=base linux linux-personal
+./install-profile --pull --save-config --base-configs=base linux raspbian-docker
 ```
 
 #### On my Corp linux:

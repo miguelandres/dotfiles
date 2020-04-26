@@ -1,0 +1,6 @@
+- shell:
+  - command:  '[[ ! $(docker -v) ]] || $( curl -fsSL https://get.docker.com -o /tmp/get-docker.sh && sudo sh /tmp/get-docker.sh )'
+    quiet: false
+    stdin: true
+    stdout: true
+    stderr: true
