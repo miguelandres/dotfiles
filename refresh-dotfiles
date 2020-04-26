@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+cd /Users/miguely/.dotfiles
+/Users/miguely/.dotfiles/install-profile --pull --base-configs=base mac mac-personal
