@@ -1,0 +1,6 @@
+- shell:
+  - command: sh ~/.dotfiles/mac/defaults-base
+    quiet: false
+    stdin: true
+    stdout: true
+    stderr: true
