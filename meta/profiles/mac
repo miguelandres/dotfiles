@@ -1,5 +1,6 @@
 brew
 brewfile-mac
+mackup-config
 vim
 zsh-standard
 oh-my-zsh

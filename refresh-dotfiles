@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cd /usr/local/google/home/miguely/.dotfiles
-/usr/local/google/home/miguely/.dotfiles/install-profile --pull --base-configs=base,base-glinux linux glinux
+cd /Users/miguely/.dotfiles
+/Users/miguely/.dotfiles/install-profile --pull --base-configs=base,base-gmac mac mac-corp
