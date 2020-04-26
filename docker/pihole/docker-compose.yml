@@ -5,8 +5,7 @@ version: "3"
 services:
   pihole:
     container_name: pihole
-    image: pihole/pihole:latest
-    # For DHCP it is recommended to remove these ports and instead add: network_mode: "host"
+    image: pihole/pihole:v4.3.1
     ports:
       - "53:53/tcp"
       - "53:53/udp"
@@ -19,9 +18,8 @@ services:
     volumes:
       - '~/docker/pihole/etc/pihole/:/etc/pihole/'
       - '~/docker/pihole/etc/dnsmasq.d/:/etc/dnsmasq.d/'
-      - '~/docker/pihole/var/log/:/var/log/'
-      # run `touch ./var-log/pihole.log` first unless you like errors
-      # - './var-log/pihole.log:/var/log/pihole.log'
+      # run `~/docker/pihole/var/log/pihole.log` first unless you like errors
+      - '~/docker/pihole/var/log/pihole.log:/var/log/pihole.log'
     dns:
       - 8.8.8.8
       - 8.8.4.4

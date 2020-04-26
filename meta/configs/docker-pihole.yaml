@@ -1,4 +1,5 @@
 - shell:
+  - touch ~/docker/pihole/var/log/pihole.log
   - command:  'docker-compose -f ~/.dotfiles/docker/pihole/docker-compose.yml up -d'
     quiet: false
     stdin: true

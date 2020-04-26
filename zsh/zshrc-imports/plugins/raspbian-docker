@@ -1,1 +1,1 @@
-plugins+=(docker)
+plugins+=(docker docker-compose)
