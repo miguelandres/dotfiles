@@ -1,1 +1,1 @@
-plugins+=(systemd)
+plugins+=(docker)
