@@ -1,6 +1,6 @@
 - shell:
-  - sudo mkdir -p ~/docker/pihole/var/log
-  - sudo touch ~/docker/pihole/var/log/pihole.log
+  - mkdir -p ~/.dotfiles/pihole-data
+  - chown dockremap:miguely ~/.dotfiles/pihole-data
   - command:  'docker-compose -f ~/.dotfiles/docker/pihole/docker-compose.yml up -d'
     quiet: false
     stdin: true

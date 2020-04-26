@@ -9,8 +9,13 @@
     stdin: true
     stdout: true
     stderr: true
+  - '[[ -f "/etc/docker/daemon.json" ]] || sudo cp ~/.dotfiles/etc-docker-daemon.json /etc/docker/daemon.json'
   - command: '[[ $(docker -v) ]] || ( curl -fsSL https://get.docker.com -o /tmp/get-docker.sh && sudo sh /tmp/get-docker.sh )'
     quiet: false
     stdin: true
     stdout: true
     stderr: true
+  - mkdir ~/docker
+  - chown dockremap:miguely ~/docker
+    
+
