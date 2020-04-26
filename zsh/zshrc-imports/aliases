@@ -3,6 +3,8 @@ alias cdsrc="cd ~/src"
 # Get week number
 alias week='date +%V'
 
+alias refresh=$HOME/.dotfiles/refresh-dotfiles
+
 # better zz from fasd
 function zz() {
   local dir

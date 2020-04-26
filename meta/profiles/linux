@@ -2,5 +2,5 @@ apt-get
 zsh-standard
 oh-my-zsh
 zshrc-imports
-zshrc-imports-linux
+zshrc-imports/linux
 gitconfig

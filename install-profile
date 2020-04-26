@@ -2,11 +2,41 @@
 
 set -e
 
-BASE_CONFIG="base"
+BASE_CONFIGS="base"
+EXECUTE_PULL=true
+SAVE_CONFIG=false
+PROFILES_TO_INSTALL=()
+# Loop through arguments and process them
+for arg in "$@"
+do
+  case $arg in
+    --pull)
+      EXECUTE_PULL=true
+      shift 
+      ;;
+    --no-pull)
+      EXECUTE_PULL=no
+      shift 
+      ;;
+    --save-config)
+      SAVE_CONFIG=true
+      shift
+      ;;
+    --base-configs=*)
+      BASE_CONFIGS="${arg#*=}"
+      shift
+      ;;
+    *)
+      PROFILES_TO_INSTALL+=("$1")
+      shift 
+      ;;
+  esac
+done
+
 CONFIG_SUFFIX=".yaml"
 
 META_DIR="meta"
-CONFIG_DIR="configs"
+CONFIGS_DIR="configs"
 PROFILES_DIR="profiles"
 
 DOTBOT_DIR="dotbot"
@@ -14,19 +44,34 @@ DOTBOT_BIN="bin/dotbot"
 
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-cd "${BASE_DIR}"
-git submodule update --init --recursive --remote
+if $SAVE_CONFIG; then
+  echo "#!/usr/bin/env bash" > refresh-dotfiles
+  echo "cd $BASE_DIR" >> refresh-dotfiles
+  if $EXECUTE_PULL; then pull_string="--pull"; else pull_string="--no-pull"; fi
+  profile_list=$( IFS=$' '; echo "${PROFILES_TO_INSTALL[*]}" )
+  echo "$BASE_DIR/install-profile $pull_string --base-configs=$BASE_CONFIGS $profile_list" >> refresh-dotfiles
+fi
 
-while IFS= read -r config; do
-	CONFIGS+=" ${config}"
-done < "${META_DIR}/${PROFILES_DIR}/$1"
+CONFIG_FILES=()
+IFS=',' read -ra BASE_CONFIGS_ARRAY <<< "$BASE_CONFIGS"
+echo "Base configs: ${BASE_CONFIGS_ARRAY[*]}"
+for config in ${BASE_CONFIGS_ARRAY[@]}
+do
+  CONFIG_FILES+=("${BASE_DIR}/${META_DIR}/${config}${CONFIG_SUFFIX}")
+done
 
-shift
+echo "Profiles: ${PROFILES_TO_INSTALL[*]}"
 
-echo ${CONFIGS}
+for profile in ${PROFILES_TO_INSTALL[@]}
+do
+  echo "Listing configs for profile $profile"
+  while IFS= read -r config
+  do
+    CONFIG_FILES+=("${BASE_DIR}/${META_DIR}/${CONFIGS_DIR}/${config}${CONFIG_SUFFIX}"); 
+  done < "${BASE_DIR}/${META_DIR}/${PROFILES_DIR}/${profile}"      
+done
 
-for config in ${CONFIGS} ${@}; do
-	echo -e "\nConfigure $config"
-	configFile="$(mktemp)" ; echo -e "$(<"${BASE_DIR}/${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${BASE_DIR}/${META_DIR}/${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")" > "$configFile"
-	"${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "$configFile" ; rm -f "$configFile"
+for file in ${CONFIG_FILES[@]}
+do
+  "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "$file"
 done

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+mackup restore
+cd ~/Google\ Drive/Mackup/Library/Application\ Support/TextMate/Managed/Bundles/Bundle\ Support.tmbundle/Support/shared/bin
+chmod +x *
+mackup backup

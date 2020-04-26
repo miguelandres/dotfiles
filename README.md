@@ -29,56 +29,72 @@ cd ~/.dotfiles/
 
 Since my dotfiles vary slightly between linux and mac, and whether this is personal or a work computer, I use a [more complicated system than the default](https://github.com/anishathalye/dotbot/wiki/Tips-and-Tricks#more-advanced-setup)
 
-There are, so far, the following profiles
+My modifications are as follows: 
 
-* `mac`
-  * Sets up zsh
-  * Sets up oh-my-zsh
-  * adds standard zshrc imports for mac that improve integration with the system (and iTerm)
-  * installs homebrew
-  * installs a brewfile that includes all the Mac App Store apps, downloaded apps and brews I need for personal and work computers.
-* `mac-personal`: Installs office apps, and other apps I cannot install on corp laptop.
-* `mac-cloud`: Installs gcloud, kubectl, docker and terraform. May the force be with you.
-* `linux`: vanilla linux installation of zsh, oh-my-zsh and standard imports
-* `glinux`: specific steps to set up zsh on my machine on glinux, and google specific imports. May move some of this off github.
+* `meta/`: Contains base configs, lightweight configs that can be run before installing profiles. These are used mostly for weird exceptions in glinux and gmac that need to be run BEFORE anything that would be common to the OS.
+* `meta/configs`: contains all regular configs. These configs can be referred to by a profile, and reused in multiple profiles.
+* `meta/profiles`: Contains profiles. Each profile is a list of `meta/configs` identifiers separated by `\n` and these are run in order.
 
-## How to use
+### Base Configs:
+* `base`
+  * cleans up old symlinks
+  * creates `~/.zshrc-imports` in preparation for all of the files that will be put there
+* `base-glinux`
+  * sets up zsh in ganpati2, otherwise it doesn't stick as the default
+  * adds a git wrapper for performance in CitC.
+* `base-gmac`
+  * Changes permissions to the directiories `brew` uses. This is only necessary in gmac.
+  
+### Profiles
+* `mac`: Base configuration, sets up oh-my-zsh, installs homebrew and all the apps I normally use.
+  * `mac-personal`: Installs apps that are not allowed in corp (like MS Office) and things Santa complains about
+  * `mac-cloud`: Installs  `docker`, `kubernetes` and `gcloud` using `brew`.
+* `linux`: vanilla linux installation of zsh, oh-my-zsh and standard imports, etc.
+  * `linux-personal`: Stuff to put on my raspberry pi
+  * `linux-personal-docker`: Installs docker and other stuff for adding software quickly.
+  * `glinux`: google specific imports. May move some of this off github.
+
+## Configurations
+Each configuration is a list of base configs and a list of profiles to run. These are run in the order in which they were declared in the invocation.
 
 ### macOS
 
 #### Personal mac
 
 ```sh
-./install-profile mac && ./install-profile mac-personal
+./install-profile --pull --save-config mac mac-personal
 ```
 
 #### Work Mac
 
 ```sh
-./install-profile prereqs-corp-mac && ./install-profile mac && ./install-profile mac-corp && ./install-profile cloud-mac
+./install-profile --pull --save-config --base-configs=base,base-gmac mac mac-cloud
 ```
 
-#### mackup
-
-After Google Drive is configured, you can run the following command to sync application configuration
-```sh
-refresh-mackup
-```
 
 ### Linux
 #### Raspberry pi
 
 ```sh
-./install-profile linux && ./install-profile linux-personal
+./install-profile --pull --save-config --base-configs=base linux linux-personal
 ```
 
 #### On my Corp linux:
 
 ```sh
-./install-profile prereqs-glinux && ./install-profile linux && ./install-profile glinux
+./install-profile --pull --save-config --base-configs=base,base-glinux linux glinux
+```
+
+## mackup
+
+After Google Drive is configured, you can run the following command to sync application configuration
+```sh
+./initialize-mackup
 ```
 
 
 ## Refresh configuration
 
-At any time after first sucessful installation you can invoke `refresh-dotfiles` to sync everything and `refresh-mackup` to sync mackup only. Both will involve a `git pull` and running the respective commands for the correct platform
+At any time after first sucessful installation you can invoke `refresh`, which will in practice re-invoke the last command to which you passed `--save-config`.
+
+

@@ -5,4 +5,5 @@
     description: Changing shell
 
 - link:
-    ~/.zshrc: zsh/zshrc
+    # Add a wrapper around git to avoid long turnaround for git_prompts in citc
+    ~/bin/git: glinux/git
