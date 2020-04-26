@@ -50,8 +50,7 @@ My modifications are as follows:
   * `mac-personal`: Installs apps that are not allowed in corp (like MS Office) and things Santa complains about
   * `mac-cloud`: Installs  `docker`, `kubernetes` and `gcloud` using `brew`.
 * `linux`: vanilla linux installation of zsh, oh-my-zsh and standard imports, etc.
-  * `linux-personal`: Stuff to put on my raspberry pi
-  * `linux-personal-docker`: Installs docker and other stuff for adding software quickly.
+  * `raspbian-docker`: Installs docker ON the raspberry pi exclusively.
   * `glinux`: google specific imports. May move some of this off github.
 
 ## Configurations
@@ -76,7 +75,7 @@ Each configuration is a list of base configs and a list of profiles to run. Thes
 #### Raspberry pi
 
 ```sh
-./install-profile --pull --save-config --base-configs=base linux raspbian-docker
+./install-profile --pull --save-config linux raspbian-docker docker-home-server
 ```
 
 #### On my Corp linux:
