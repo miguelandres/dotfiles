@@ -18,7 +18,7 @@ services:
     volumes:
       - '~/docker/pihole/etc/pihole/:/etc/pihole/'
       - '~/docker/pihole/etc/dnsmasq.d/:/etc/dnsmasq.d/'
-      # run `~/docker/pihole/var/log/pihole.log` first unless you like errors
+      # run `touch ~/docker/pihole/var/log/pihole.log` first unless you like errors
       - '~/docker/pihole/var/log/pihole.log:/var/log/pihole.log'
     dns:
       - 8.8.8.8
