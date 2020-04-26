@@ -9,7 +9,7 @@
     stdin: true
     stdout: true
     stderr: true
-  - command: '[[ ! $(groups `whoami` | grep '\bdocker\b') ]] || ( sudo gpasswd -a `whoami` docker )'
+  - command: '[[ ! $(groups `whoami` | grep "\bdocker\b") ]] || ( sudo gpasswd -a `whoami` docker )'
     quiet: false
     stdin: true
     stdout: true
