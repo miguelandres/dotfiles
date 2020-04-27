@@ -14,7 +14,7 @@ cask "visual-studio-code"
 cask "vlc"
 
 mas "Facebook Messenger", id:1480068668
-mas "GoodNotes", id:1480793815
+mas "GoodNotes", id:1444383602
 mas "Kakaotalk", id:869223134
 mas "LINE", id:539883307
 mas "Microsoft OneNote", id:784801555
