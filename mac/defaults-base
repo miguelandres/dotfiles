@@ -174,6 +174,12 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 # Finder                                                                      #
 ###############################################################################
 
+loggedInUser=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
+
+# Adds Home Folder to the list of favorites
+[[ $(mysides list | grep $loggedInUser) ]] || mysides add $loggedInUser file:///Users/$loggedInUser 
+
+
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 #defaults write com.apple.finder QuitMenuItem -bool true
 
