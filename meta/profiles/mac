@@ -8,4 +8,5 @@ zshrc-imports
 zshrc-imports/mac
 mac-defaults/base
 gitconfig
+tmux
 brewfile-mac

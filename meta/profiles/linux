@@ -3,4 +3,5 @@ zsh-standard
 oh-my-zsh
 zshrc-imports
 zshrc-imports/linux
+tmux
 gitconfig

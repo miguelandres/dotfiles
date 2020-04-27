@@ -7,3 +7,5 @@
 - create:
     - ~/.zshrc-imports
     - ~/.zshrc-imports/plugins
+    - ~/.tmux
+    - ~/.tmux/plugins
