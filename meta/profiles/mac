@@ -1,5 +1,5 @@
 brew
-brewfile-mac
+brewfile-mac-basics
 mackup-config
 vim
 zsh-standard
@@ -8,3 +8,4 @@ zshrc-imports
 zshrc-imports/mac
 mac-defaults/base
 gitconfig
+brewfile-mac
