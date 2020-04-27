@@ -8,6 +8,7 @@ brew "go"
 brew "graphviz"
 
 cask "discord"
+cask "github"
 cask "spotify"
 cask "steam"
 cask "visual-studio-code"
