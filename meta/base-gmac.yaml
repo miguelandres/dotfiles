@@ -1,9 +1,9 @@
 - shell:
-	- command: sh ~/.dotfiles/mac/defaults-corp
-	  quiet: false
-	  stdin: true
-	  stdout: true
-	  stderr: true
+  - command: sh ~/.dotfiles/mac/defaults-corp
+    quiet: false
+    stdin: true
+    stdout: true
+    stderr: true
   - description: changing permissions for /usr/local/bin, horrible hack for brew
     command: sudo chown -R $(whoami) /usr/local/etc /usr/local/sbin /usr/local/bin /usr/local/share /usr/local/share/doc && chmod u+w /usr/local/etc /usr/local/sbin /usr/local/bin /usr/local/share /usr/local/share/doc
     stdout: true
