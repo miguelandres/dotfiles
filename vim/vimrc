@@ -63,9 +63,12 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
-" vv to generate new vertical split
+" \v to generate new vertical split
 nnoremap <leader>v :vsplit<CR>
+" \s to generate new vertical split
 nnoremap <leader>s :split<CR>
+" \e to explore
+nnoremap <leader>e :Explore<CR>
 
 " Prompt for a command to run
 map <Leader>vp :VimuxPromptCommand<CR>
