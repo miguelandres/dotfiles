@@ -5,3 +5,5 @@
     ~/.tmux/plugins/tpm:
       force: true
       path:  tmux/plugins/tpm
+- shell:
+        - sh -c "~/.tmux/plugins/tpm/scripts/install_plugins.sh"

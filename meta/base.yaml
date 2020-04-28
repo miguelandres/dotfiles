@@ -9,3 +9,5 @@
     - ~/.zshrc-imports/plugins
     - ~/.tmux
     - ~/.tmux/plugins
+    - ~/.vim
+    - ~/.vim/bundle
