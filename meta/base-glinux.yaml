@@ -1,0 +1,18 @@
+- shell:
+  - command: "[[ $(prodcertstatus --quiet --check_remaining_hours 1) -eq 0 ]] || prodaccess"
+    description: Getting LOAS credentials
+    quiet: false
+    stdin: true
+    stdout: true
+    stderr: true
+  - command: '[[ -n $(ganpati2 user show --id=$USER.corp | grep zsh) ]] || ganpati2 user edit --id=$USER.corp --corp_shell=`which zsh` --approve_now=true'
+    description: Changing shell
+    quiet: false
+    stdin: true
+    stdout: true
+    stderr: true
+- create:
+    - ~/bin
+- link:
+    # Add a wrapper around git to avoid long turnaround for git_prompts in citc
+    ~/bin/git: glinux/git

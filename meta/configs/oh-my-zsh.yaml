@@ -1,10 +1,14 @@
 - shell:
   - description: oh-my-zsh
-    command: '[ -v ZSH ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended'
+    command: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended || true'
     stdout: true
     stdin: true
 - link:
-    ~/.zshrc: zsh/zshrc
+    ~/.zshrc:
+      force: true
+      path: zsh/zshrc
     ~/.p10k.zsh: zsh/p10k.zsh
     ~/.zshenv: zsh/zshenv
-    ~/.oh-my-zsh/custom: zsh/custom
+    ~/.oh-my-zsh/custom:
+      force: true
+      path:  zsh/custom

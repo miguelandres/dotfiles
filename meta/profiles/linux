@@ -1,7 +1,7 @@
-linux-ssh-setup
-oh-my-zsh
-zsh-standard
-zshrc-imports
-zshrc-imports-linux
 apt-get
+zsh-standard
+oh-my-zsh
+zshrc-imports
+zshrc-imports/linux
+tmux
 gitconfig

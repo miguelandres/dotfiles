@@ -1,5 +1,5 @@
 - shell:
     - description: install cloud tools
-      command: zsh -c "cd ~/.dotfiles/mac/cloud-tools && brew bundle --no-lock"
+      command: zsh -c "cd ~/.dotfiles/brewfiles/mac/cloud-tools && brew bundle --no-lock"
       stdout: true
       stdin: true

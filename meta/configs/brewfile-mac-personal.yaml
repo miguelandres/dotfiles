@@ -1,5 +1,5 @@
 - shell:
   - description: install personal apps
-    command: zsh -c "cd ~/.dotfiles/mac/personal && brew bundle --no-lock"
+    command: zsh -c "cd ~/.dotfiles/brewfiles/mac/personal && brew bundle --no-lock"
     stdout: true
     stdin: true

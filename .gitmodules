@@ -13,3 +13,7 @@
 	path = zsh/custom/plugins/zsh-completions
 	url = git@github.com:zsh-users/zsh-completions.git
 	branch = master
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm.git
+	branch = master

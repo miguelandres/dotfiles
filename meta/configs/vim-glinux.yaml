@@ -1,2 +1,5 @@
 - link:
-    ~/.vimrc: vim/vimrc-glinux
+    ~/.vimrc:
+        path:  vim/vimrc-glinux
+        force: true
+

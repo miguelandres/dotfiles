@@ -1,4 +1,9 @@
+Host raspberrypi
+  PreferredAuthentications keyboard-interactive,password
+  PubkeyAuthentication no
+
 Host *
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
+

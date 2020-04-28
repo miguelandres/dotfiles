@@ -3,6 +3,9 @@
       force: true
       create: true
       relink: true
-- clean: ['~']
+- clean: ['~', "~/.ssh/", "~/.vim/", "~/.zshrc-imports/", "~/.zshrc-imports/plugins/"]
 - create:
     - ~/.zshrc-imports
+    - ~/.zshrc-imports/plugins
+    - ~/.tmux
+    - ~/.tmux/plugins

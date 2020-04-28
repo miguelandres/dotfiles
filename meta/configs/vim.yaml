@@ -1,2 +1,5 @@
 - link:
-    ~/.vimrc: vim/vimrc
+    ~/.vimrc:
+        path: vim/vimrc
+        force: true
+

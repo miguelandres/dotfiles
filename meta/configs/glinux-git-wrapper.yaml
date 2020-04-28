@@ -1,4 +1,0 @@
-# Add a wrapper around git to avoid long turnaround for git_prompts in citc
-
-- link:
-    ~/bin/git: glinux/git

@@ -1,0 +1,26 @@
+# Brewfile
+brew "cask"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+cask_args appdir: '/Applications'
+
+brew "go"
+brew "graphviz"
+
+cask "discord"
+cask "github"
+cask "spotify"
+cask "steam"
+cask "visual-studio-code"
+cask "vlc"
+
+mas "Facebook Messenger", id:1480068668
+mas "GoodNotes", id:1444383602
+mas "Kakaotalk", id:869223134
+mas "LINE", id:539883307
+mas "Microsoft OneNote", id:784801555
+mas "Parcel", id:639968404
+mas "Slack", id:803453959
+mas "Twitter", id:1482454543
+mas "Wechat", id:836500024
+mas "Whatsapp", id:1147396723

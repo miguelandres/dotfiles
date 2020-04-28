@@ -1,0 +1,7 @@
+- link:
+    ~/.tmux.conf:
+      force: true
+      path: tmux/tmux.conf
+    ~/.tmux/plugins/tpm:
+      force: true
+      path:  tmux/plugins/tpm

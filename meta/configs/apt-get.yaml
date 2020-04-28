@@ -1,5 +1,9 @@
 - shell:
-  - PACKAGE_TO_INSTALL=fzf; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get install $PACKAGE_TO_INSTALL
-  - PACKAGE_TO_INSTALL=zsh-autosuggestions; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get install $PACKAGE_TO_INSTALL
+  - PACKAGE_TO_INSTALL=zsh; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
+  - PACKAGE_TO_INSTALL=tmux; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
+  - PACKAGE_TO_INSTALL=vim; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
+  - PACKAGE_TO_INSTALL=git; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
+  - PACKAGE_TO_INSTALL=fzf; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
+  - PACKAGE_TO_INSTALL=zsh-autosuggestions; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
 
   

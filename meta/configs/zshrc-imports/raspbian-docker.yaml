@@ -1,0 +1,4 @@
+- link:
+    ~/.zshrc-imports/.zshrc-raspbian-docker: zsh/zshrc-imports/zshrc-raspbian-docker
+    ~/.zshrc-imports/.aliases-raspbian-docker: zsh/zshrc-imports/aliases-raspbian-docker
+    ~/.zshrc-imports/plugins/.raspbian-docker: zsh/zshrc-imports/plugins/raspbian-docker
