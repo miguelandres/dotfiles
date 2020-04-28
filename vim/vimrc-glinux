@@ -61,6 +61,17 @@ Glug syntastic-google
 " https://github.com/SirVer/ultisnips.
 Glug ultisnips-google
 
+Glug codefmt
+Glug codefmt-google
+autocmd FileType bzl AutoFormatBuffer buildifier
+autocmd FileType go AutoFormatBuffer gofmt
+autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+autocmd FileType java AutoFormatBuffer google-java-format
+autocmd FileType jslayout AutoFormatBuffer jslfmt
+autocmd FileType go AutoFormatBuffer gofmt
+autocmd FileType python AutoFormatBuffer pyformat
+
+
 " All of your plugins must be added before the following line.
 
 " Enable file type based indent configuration and syntax highlighting.
