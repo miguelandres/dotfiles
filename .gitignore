@@ -1,4 +1,4 @@
 **/Brewfile.lock.json
-refresh-dotfiles
+/refresh-dotfiles
 **/*.swp
 **/.DS_Store
