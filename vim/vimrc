@@ -1,8 +1,40 @@
 set nocompatible
+set mouse=a
+
 filetype off
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+  " let Vundle manage Vundle, required
+  Plugin 'VundleVim/Vundle.vim'
+
+  Plugin 'benmills/vimux'
+  Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'scrooloose/nerdcommenter'
+  Plugin 'Valloric/MatchTagAlways'
+  Plugin 'tpope/vim-sensible'
+  Plugin 'SirVer/ultisnips'
+
+  " Snippets for ultisnips are separated from the engine. keep as last.
+  Plugin 'honza/vim-snippets'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+filetype plugin indent on
 " syntax highlighting
 syntax on
+" use » to mark Tabs and ° to mark trailing whitespace. This is a
+" non-obtrusive way to mark these special characters.
+set list listchars=tab:»\ ,trail:°
+
+" Highlight the search term when you search for it.
+set hlsearch
+
+" By default, it looks up man pages for the word under the cursor, which isn't
+" very useful, so we map it to something else.
+nnoremap <s-k> <CR>
+
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -31,4 +63,14 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
-filetype plugin indent on
+" vv to generate new vertical split
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>s :split<CR>
+
+" Prompt for a command to run
+map <Leader>vp :VimuxPromptCommand<CR>
+" Run last command executed by VimuxRunCommand
+map <Leader>vl :VimuxRunLastCommand<CR>
+" Zoom the tmux runner pane
+map <Leader>vz :VimuxZoomRunner<CR>
+
