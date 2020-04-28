@@ -1,5 +1,5 @@
 - shell:
-  - command: "[[ ! $(prodcertstatus --quiet --check_remaining_hours 1) ]] && prodaccess"
+  - command: "[[ $(prodcertstatus --quiet --check_remaining_hours 1) -eq 0 ]] || prodaccess"
     description: Getting LOAS credentials
     quiet: false
     stdin: true
