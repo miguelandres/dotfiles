@@ -84,12 +84,14 @@ Each configuration is a list of base configs and a list of profiles to run. Thes
 ./install-profile --pull --save-config --base-configs=base,base-glinux linux glinux
 ```
 
-## mackup
+## [mackup](https://github.com/lra/mackup)
 
 After Google Drive is configured, you can run the following command to sync application configuration
 ```sh
-./initialize-mackup
+mackup restore && mackup backup
 ```
+
+Look at mackup/mackup.cfg to see what will not be synced (or maybe customize it and just choose apps manually)
 
 
 ## Refresh configuration
