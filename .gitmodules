@@ -21,3 +21,7 @@
 	path = vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
 	branch = master
+[submodule "zsh/custom/plugins/zsh-vim-mode"]
+	path = zsh/custom/plugins/zsh-vim-mode
+	url = git@github.com:softmoth/zsh-vim-mode.git
+	branch = master
