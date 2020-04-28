@@ -2,6 +2,6 @@
     ~/.tmux.conf:
       force: true
       path: tmux/tmux.conf
-    ~/.tmux/plugins:
+    ~/.tmux/plugins/tpm:
       force: true
-      path:  tmux/plugins
+      path:  tmux/plugins/tpm
