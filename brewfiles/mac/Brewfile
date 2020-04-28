@@ -7,6 +7,7 @@ cask_args appdir: '/Applications'
 brew "go"
 brew "graphviz"
 
+cask "basictex"
 cask "discord"
 cask "github"
 cask "spotify"
