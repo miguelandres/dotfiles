@@ -88,7 +88,7 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Disable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -371,6 +371,25 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner → Desktop
 defaults write com.apple.dock wvous-br-corner -int 4
 defaults write com.apple.dock wvous-br-modifier -int 0
+
+dockutil --remove all --no-restart
+dockutil --add "/Applications/Safari.app" --no-restart
+dockutil --add "/Applications/Google Chrome.app" --no-restart
+dockutil --add "/System/Applications/Messages.app" --no-restart
+dockutil --add "/Applications/Dashlane.app" --no-restart
+dockutil --add "/Applications/TextMate.app" --no-restart
+dockutil --add "/Applications/iTerm.app" --no-restart
+dockutil --add "/Applications/Parcel.app" --no-restart
+dockutil --add "/Applications/Things3.app" --no-restart
+dockutil --add "/Applications/Microsoft OneNote.app" --no-restart
+dockutil --add "/Applications/Spotify.app" --no-restart
+dockutil --add "/Applications/Discord.app" --no-restart
+dockutil --add "/Applications/Slack.app" --no-restart
+dockutil --add "/Applications/Messenger.app" --no-restart
+dockutil --add "/Applications/WhatsApp.app" --no-restart
+dockutil --add "/Applications/WeChat.app" --no-restart
+dockutil --add "/Applications/LINE.app" --no-restart
+dockutil --add "/Applications/KakaoTalk.app" --no-restart
 
 ###############################################################################
 # Safari & WebKit                                                             #
@@ -708,3 +727,4 @@ for app in "Activity Monitor" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+

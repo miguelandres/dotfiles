@@ -6,6 +6,7 @@ cask_args appdir: '/Applications'
 
 brew "go"
 brew "graphviz"
+brew "python"
 
 cask "basictex"
 cask "discord"
