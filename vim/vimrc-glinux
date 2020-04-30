@@ -80,6 +80,15 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 map <Leader>vz :VimuxZoomRunner<CR>
 set mouse=a
 
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" " If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " Plugin configuration.
 " See http://google3/devtools/editors/vim/examples/ for example configurations
 " and http://go/vim/plugins for more information about vim plugins at Google.
