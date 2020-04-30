@@ -53,6 +53,7 @@ if $SAVE_CONFIG; then
   if $EXECUTE_PULL; then pull_string="--pull"; else pull_string="--no-pull"; fi
   profile_list=$( IFS=$' '; echo "${PROFILES_TO_INSTALL[*]}" )
   echo "$BASE_DIR/install-profile $pull_string --base-configs=$BASE_CONFIGS $profile_list" >> refresh-dotfiles
+  chmod 755 "$BASE_DIR/refresh-dotfiles"
 fi
 
 if $EXECUTE_PULL; then

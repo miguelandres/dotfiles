@@ -14,10 +14,11 @@ call vundle#begin()
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'Valloric/MatchTagAlways'
   Plugin 'tpope/vim-sensible'
-  Plugin 'SirVer/ultisnips'
+  " UltiSnips is failing on mac
+  "Plugin 'SirVer/ultisnips'
 
   " Snippets for ultisnips are separated from the engine. keep as last.
-  Plugin 'honza/vim-snippets'
+  "Plugin 'honza/vim-snippets'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
