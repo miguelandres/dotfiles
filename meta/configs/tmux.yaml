@@ -5,5 +5,5 @@
     ~/.tmux/plugins/tpm:
       force: true
       path:  tmux/plugins/tpm
-- shell:
-        - sh -c "tmux start-server && tmux new-session -d && ~/.tmux/plugins/tpm/scripts/install_plugins.sh && tmux kill-server"
+#- shell:
+        #- sh -c "tmux start-server && tmux new-session -d && ~/.tmux/plugins/tpm/scripts/install_plugins.sh && tmux kill-server"
