@@ -16,8 +16,8 @@ services:
       TZ: 'America/New_York'
       WEBPASSWORD: 'archer2016'
     volumes:
-      - '~/.dotfiles/pihole-data/etc/pihole/:/etc/pihole/'
-      - '~/.dotfiles/pihole-data/etc/dnsmasq.d/:/etc/dnsmasq.d/'
+      - '~/docker/pihole-data/etc/pihole/:/etc/pihole/'
+      - '~/docker/pihole-data/etc/dnsmasq.d/:/etc/dnsmasq.d/'
     dns:
       - 8.8.8.8
       - 8.8.4.4
