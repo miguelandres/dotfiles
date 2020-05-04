@@ -25,3 +25,7 @@
 	path = zsh/custom/plugins/zsh-vim-mode
 	url = git@github.com:softmoth/zsh-vim-mode.git
 	branch = master
+[submodule "vim/bundle/bbye"]
+	path = vim/bundle/bbye
+	url = git@github.com:moll/vim-bbye.git
+	branch = master
