@@ -2,7 +2,15 @@
 
 This repo uses anishathalye/dotbot for configuring my dotfiles and other utilities.
 
-## Getting started
+## Getting started (basic)
+
+
+```sh
+git clone --recurse-submodules -j8 git@github.com:miguelandres/dotfiles.git ~/.dotfiles/
+cd ~/.dotfiles/
+```
+
+## Getting started (With SSH auth)
 
 
 ```sh
@@ -24,6 +32,7 @@ cat ~/.ssh/id_rsa.pub
 git clone --recurse-submodules -j8 git@github.com:miguelandres/dotfiles.git ~/.dotfiles/
 cd ~/.dotfiles/
 ```
+
 
 ## Profiles and configs
 
