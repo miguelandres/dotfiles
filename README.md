@@ -24,7 +24,7 @@ Host *
   IdentityFile ~/.ssh/id_rsa
 EOF
 fi
-ssh-add -K ~/.ssh/id_rsa 2>/dev/null || ssh-add ~/.ssh/id_rsa 
+ssh-add -K ~/.ssh/id_rsa 2>/dev/null || ssh-add ~/.ssh/id_rsa
 
 echo "Put the following key in your github account."
 cat ~/.ssh/id_rsa.pub
@@ -38,7 +38,7 @@ cd ~/.dotfiles/
 
 Since my dotfiles vary slightly between linux and mac, and whether this is personal or a work computer, I use a [more complicated system than the default](https://github.com/anishathalye/dotbot/wiki/Tips-and-Tricks#more-advanced-setup)
 
-My modifications are as follows: 
+My modifications are as follows:
 
 * `meta/`: Contains base configs, lightweight configs that can be run before installing profiles. These are used mostly for weird exceptions in glinux and gmac that need to be run BEFORE anything that would be common to the OS.
 * `meta/configs`: contains all regular configs. These configs can be referred to by a profile, and reused in multiple profiles.
@@ -53,7 +53,7 @@ My modifications are as follows:
   * adds a git wrapper for performance in CitC.
 * `base-gmac`
   * Changes permissions to the directiories `brew` uses. This is only necessary in gmac.
-  
+
 ### Profiles
 * `mac`: Base configuration, sets up oh-my-zsh, installs homebrew and all the apps I normally use.
   * `mac-personal`: Installs apps that are not allowed in corp (like MS Office) and things Santa complains about
@@ -106,5 +106,3 @@ Look at mackup/mackup.cfg to see what will not be synced (or maybe customize it 
 ## Refresh configuration
 
 At any time after first sucessful installation you can invoke `refresh`, which will in practice re-invoke the last command to which you passed `--save-config`.
-
-

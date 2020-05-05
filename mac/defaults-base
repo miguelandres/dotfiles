@@ -107,7 +107,7 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en" "es" "pt" "fr" "jp" "ko" 
+defaults write NSGlobalDomain AppleLanguages -array "en" "es" "pt" "fr" "jp" "ko"
 defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
@@ -177,7 +177,7 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 loggedInUser=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
 
 # Adds Home Folder to the list of favorites
-[[ $(mysides list | grep $loggedInUser) ]] || mysides add $loggedInUser file:///Users/$loggedInUser 
+[[ $(mysides list | grep $loggedInUser) ]] || mysides add $loggedInUser file:///Users/$loggedInUser
 
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
@@ -727,4 +727,3 @@ for app in "Activity Monitor" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-

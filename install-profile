@@ -15,11 +15,11 @@ do
   case $arg in
     --pull)
       EXECUTE_PULL=true
-      shift 
+      shift
       ;;
     --no-pull)
       EXECUTE_PULL=false
-      shift 
+      shift
       ;;
     --save-config)
       SAVE_CONFIG=true
@@ -31,7 +31,7 @@ do
       ;;
     *)
       PROFILES_TO_INSTALL+=("$1")
-      shift 
+      shift
       ;;
   esac
 done
@@ -74,8 +74,8 @@ for profile in ${PROFILES_TO_INSTALL[@]}
 do
   while IFS= read -r config
   do
-    CONFIG_FILES+=("${BASE_DIR}/${META_DIR}/${CONFIGS_DIR}/${config}${CONFIG_SUFFIX}"); 
-  done < "${BASE_DIR}/${META_DIR}/${PROFILES_DIR}/${profile}"      
+    CONFIG_FILES+=("${BASE_DIR}/${META_DIR}/${CONFIGS_DIR}/${config}${CONFIG_SUFFIX}");
+  done < "${BASE_DIR}/${META_DIR}/${PROFILES_DIR}/${profile}"
 done
 
 for file in ${CONFIG_FILES[@]}

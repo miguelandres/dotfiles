@@ -10,4 +10,3 @@
         force: true
 - shell:
    - 'vim +PluginInstall +qall'
-

@@ -1,7 +1,7 @@
 - link:
-   ~/.mackup: 
+   ~/.mackup:
      path: mackup/dotmackup
      force: true
-   ~/.mackup.cfg: 
+   ~/.mackup.cfg:
      path: mackup/mackup.cfg
      force: true

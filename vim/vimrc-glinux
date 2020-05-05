@@ -158,4 +158,3 @@ Glug corpweb
 " All of your plugins must be added before the following line.
 filetype plugin indent on
 syntax on
-
