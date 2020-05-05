@@ -2,4 +2,3 @@
     ~/.zshrc-imports/.zshrc-linux: zsh/zshrc-imports/zshrc-linux
     ~/.zshrc-imports/.aliases-linux: zsh/zshrc-imports/aliases-linux
     ~/.zshrc-imports/plugins/.linux: zsh/zshrc-imports/plugins/linux
-    

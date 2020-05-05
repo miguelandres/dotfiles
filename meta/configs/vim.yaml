@@ -2,9 +2,11 @@
     ~/.vimrc:
         path: vim/vimrc
         force: true
+    ~/.vim/bundle/bbye:
+        path:  vim/bundle/bbye
+        force: true
     ~/.vim/bundle/Vundle.vim:
         path:  vim/bundle/Vundle.vim
         force: true
 - shell:
    - 'vim +PluginInstall +qall'
-

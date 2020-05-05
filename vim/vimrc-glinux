@@ -4,6 +4,7 @@ set mouse=a
 filetype off
 
 " set the runtime path to include Vundle and initialize
+set runtimepath^=~/.vim/bundle/bbye
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   " let Vundle manage Vundle, required
@@ -71,6 +72,9 @@ nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>s :split<CR>
 " \e to explore
 nnoremap <leader>e :Explore<CR>
+
+" \q to close buffer
+nnoremap <Leader>q :Bdelete<CR>
 
 " Prompt for a command to run
 map <Leader>vp :VimuxPromptCommand<CR>
@@ -163,4 +167,3 @@ Glug corpweb
 " All of your plugins must be added before the following line.
 filetype plugin indent on
 syntax on
-

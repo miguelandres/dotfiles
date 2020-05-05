@@ -16,5 +16,3 @@
     stdout: true
     stderr: true
   - '( [[ ! -d ~/docker ]] && mkdir ~/docker && sudo chown dockremap:$USER ~/docker ) || true'
-    
-
