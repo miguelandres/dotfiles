@@ -84,6 +84,7 @@ augroup autoformat_settings
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
   autocmd FileType rust AutoFormatBuffer rustfmt
   autocmd FileType vue AutoFormatBuffer prettier
+  autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 augroup END
 
 " \v to generate new vertical split
@@ -102,4 +103,3 @@ map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
 " Zoom the tmux runner pane
 map <Leader>vz :VimuxZoomRunner<CR>
-
