@@ -1,5 +1,5 @@
 - shell:
-  - '( [[ ! -d ~/.dotfiles/pihole-data ]] && mkdir -p ~/.dotfiles/pihole-data && sudo chown dockremap:$USER ~/.dotfiles/pihole-data) || true'
+  - '( [[ ! -d ~/docker/pihole-data ]] && mkdir -p ~/docker/pihole-data && sudo chown -R dockremap:$USER ~/docker/pihole-data && sudo chmod -R 775 ~/docker/pihole-data) || true'
   - command:  'docker-compose -f ~/.dotfiles/docker/pihole/docker-compose.yml up -d'
     quiet: false
     stdin: true

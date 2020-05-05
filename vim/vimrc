@@ -4,6 +4,7 @@ set mouse=a
 filetype off
 
 " set the runtime path to include Vundle and initialize
+set runtimepath^=~/.vim/bundle/bbye
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   " let Vundle manage Vundle, required
@@ -16,8 +17,9 @@ call vundle#begin()
   Plugin 'google/vim-maktaba'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'tpope/vim-sensible'
-  Plugin 'Valloric/MatchTagAlways'
-  " UltiSnips is failing on mac
+  "Not working on Raspberry pi
+  "Plugin 'Valloric/MatchTagAlways'
+  " Not working in my installs other than glinux
   "Plugin 'SirVer/ultisnips'
 
   " Snippets for ultisnips are separated from the engine. keep as last.
@@ -90,6 +92,9 @@ nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>s :split<CR>
 " \e to explore
 nnoremap <leader>e :Explore<CR>
+
+" \q to close buffer
+nnoremap <Leader>q :Bdelete<CR>
 
 " Prompt for a command to run
 map <Leader>vp :VimuxPromptCommand<CR>
