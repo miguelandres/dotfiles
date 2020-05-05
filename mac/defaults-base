@@ -385,7 +385,6 @@ dockutil --add "/Applications/Microsoft OneNote.app" --no-restart
 dockutil --add "/Applications/Spotify.app" --no-restart
 dockutil --add "/Applications/Discord.app" --no-restart
 dockutil --add "/Applications/Slack.app" --no-restart
-dockutil --add "/Applications/Messenger.app" --no-restart
 dockutil --add "/Applications/WhatsApp.app" --no-restart
 dockutil --add "/Applications/WeChat.app" --no-restart
 dockutil --add "/Applications/LINE.app" --no-restart
@@ -712,18 +711,11 @@ for app in "Activity Monitor" \
 	"Contacts" \
 	"Dock" \
 	"Finder" \
-	"Google Chrome Canary" \
-	"Google Chrome" \
 	"Mail" \
 	"Messages" \
-	"Opera" \
-	"Photos" \
 	"Safari" \
-	"SizeUp" \
-	"SystemUIServer" \
-	"Terminal" \
-	"Twitter" \
-	"iCal"; do
+	"SystemUIServer"
+	; do
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
