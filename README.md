@@ -1,6 +1,6 @@
 # Miguely's Dotfiles
 
-This repo uses anishathalye/dotbot for configuring my dotfiles and other utilities.
+This repo uses [@anishathalye/dotbot](http://github.com/anishathalye/dotbot) for configuring my dotfiles and other utilities.
 
 ## Getting started (basic)
 
@@ -62,32 +62,32 @@ My modifications are as follows:
   * `raspbian-docker`: Installs docker ON the raspberry pi exclusively.
   * `glinux`: google specific imports. May move some of this off github.
 
-## Configurations
+### Configurations
 Each configuration is a list of base configs and a list of profiles to run. These are run in the order in which they were declared in the invocation.
 
-### macOS
+## macOS
 
-#### Personal mac
+### Personal mac
 
 ```sh
 ./install-profile --pull --save-config mac mac-personal
 ```
 
-#### Work Mac
+### Work Mac
 
 ```sh
 ./install-profile --pull --save-config --base-configs=base,base-gmac mac mac-cloud
 ```
 
 
-### Linux
-#### Raspberry pi
+## Linux
+### Raspberry pi
 
 ```sh
 ./install-profile --pull --save-config linux linux-personal raspbian-docker docker-home-server
 ```
 
-#### On my Corp linux:
+### On my Corp linux:
 
 ```sh
 ./install-profile --pull --save-config --base-configs=base,base-glinux linux glinux
