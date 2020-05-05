@@ -5,3 +5,4 @@ zshrc-imports
 zshrc-imports/linux
 tmux
 gitconfig
+git-pre-commit

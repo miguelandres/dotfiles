@@ -6,14 +6,15 @@ cask_args appdir: '/Applications'
 
 brew "go"
 brew "graphviz"
+brew "pre-commit"
 brew "python"
+brew "python3"
 brew "vim"
 
 cask "basictex"
 cask "discord"
 cask "github"
 cask "spotify"
-cask "soundflower"
 cask "steam"
 cask "visual-studio-code"
 cask "vlc"

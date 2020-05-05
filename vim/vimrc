@@ -12,9 +12,13 @@ call vundle#begin()
 
   Plugin 'benmills/vimux'
   Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'google/vim-codefmt'
+  Plugin 'google/vim-glaive'
+  Plugin 'google/vim-maktaba'
   Plugin 'scrooloose/nerdcommenter'
-  "Plugin 'Valloric/MatchTagAlways'
   Plugin 'tpope/vim-sensible'
+  "Not working on Raspberry pi
+  "Plugin 'Valloric/MatchTagAlways'
   " Not working in my installs other than glinux
   "Plugin 'SirVer/ultisnips'
 
@@ -22,6 +26,10 @@ call vundle#begin()
   "Plugin 'honza/vim-snippets'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+call glaive#Install()
+
+" Optional: Enable codefmt's default mappings on the <Leader>= prefix.
+Glaive codefmt plugin[mappings]
 
 filetype plugin indent on
 " syntax highlighting
@@ -64,6 +72,20 @@ set showmatch
 
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType rust AutoFormatBuffer rustfmt
+  autocmd FileType vue AutoFormatBuffer prettier
+  autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+augroup END
 
 " \v to generate new vertical split
 nnoremap <leader>v :vsplit<CR>
@@ -81,4 +103,3 @@ map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
 " Zoom the tmux runner pane
 map <Leader>vz :VimuxZoomRunner<CR>
-
