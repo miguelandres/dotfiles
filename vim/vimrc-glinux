@@ -110,11 +110,11 @@ Glug codefmt
 Glug codefmt-google
 Glug codefmt plugin[mappings] gofmt_executable="goimports"
 autocmd FileType bzl AutoFormatBuffer buildifier
-autocmd FileType go AutoFormatBuffer gofmt
 autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+autocmd FileType go AutoFormatBuffer gofmt
 autocmd FileType java AutoFormatBuffer google-java-format
 autocmd FileType jslayout AutoFormatBuffer jslfmt
-autocmd FileType go AutoFormatBuffer gofmt
+autocmd FileType md AutoFormatBuffer mdformat
 autocmd FileType python AutoFormatBuffer pyformat
 
 " Load YCM (http://go/ycm) for semantic auto-completion and quick syntax
