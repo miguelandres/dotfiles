@@ -11,9 +11,12 @@ call vundle#begin()
 
   Plugin 'benmills/vimux'
   Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'google/vim-codefmt'
+  Plugin 'google/vim-glaive'
+  Plugin 'google/vim-maktaba'
   Plugin 'scrooloose/nerdcommenter'
-  Plugin 'Valloric/MatchTagAlways'
   Plugin 'tpope/vim-sensible'
+  Plugin 'Valloric/MatchTagAlways'
   " UltiSnips is failing on mac
   "Plugin 'SirVer/ultisnips'
 
@@ -21,6 +24,10 @@ call vundle#begin()
   "Plugin 'honza/vim-snippets'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+call glaive#Install()
+
+" Optional: Enable codefmt's default mappings on the <Leader>= prefix.
+Glaive codefmt plugin[mappings]
 
 filetype plugin indent on
 " syntax highlighting
@@ -63,6 +70,19 @@ set showmatch
 
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType rust AutoFormatBuffer rustfmt
+  autocmd FileType vue AutoFormatBuffer prettier
+augroup END
 
 " \v to generate new vertical split
 nnoremap <leader>v :vsplit<CR>
