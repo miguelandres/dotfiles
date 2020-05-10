@@ -1,0 +1,4 @@
+- link:
+    ~/.gitconfig:
+      path: gitconfig-mati
+      force: true
