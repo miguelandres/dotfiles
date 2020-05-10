@@ -73,10 +73,16 @@ Each configuration is a list of base configs and a list of profiles to run. Thes
 ./install-profile --pull --save-config mac mac-personal
 ```
 
+### Mati's mac
+
+```sh
+./install-profile --pull --save-config mac mac-mati
+```
+
 ### Work Mac
 
 ```sh
-./install-profile --pull --save-config --base-configs=base,base-gmac mac mac-cloud
+./install-profile --pull --save-config --base-configs=base,base-gmac mac mac-corp
 ```
 
 
