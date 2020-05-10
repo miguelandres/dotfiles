@@ -1,2 +1,4 @@
 mac-defaults/mati
 gitconfig-mati
+brewfile-mac-personal
+zshrc-imports/mac-personal
