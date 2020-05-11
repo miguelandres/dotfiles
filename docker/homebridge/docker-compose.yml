@@ -1,0 +1,14 @@
+version: '3'
+services:
+  homebridge:
+    image: oznu/homebridge:latest
+    container_name: homebridge
+    restart: always
+    network_mode: host
+    userns_mode: host
+    environment:
+      - TZ=America/New_York
+      - HOMEBRIDGE_CONFIG_UI=1
+      - HOMEBRIDGE_CONFIG_UI_PORT=8080
+    volumes:
+      - ~/docker/homebridge:/homebridge
