@@ -84,6 +84,15 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 map <Leader>vz :VimuxZoomRunner<CR>
 set mouse=a
 
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" " If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " Plugin configuration.
 " See http://google3/devtools/editors/vim/examples/ for example configurations
 " and http://go/vim/plugins for more information about vim plugins at Google.
@@ -105,11 +114,11 @@ Glug codefmt
 Glug codefmt-google
 Glug codefmt plugin[mappings] gofmt_executable="goimports"
 autocmd FileType bzl AutoFormatBuffer buildifier
-autocmd FileType go AutoFormatBuffer gofmt
 autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+autocmd FileType go AutoFormatBuffer gofmt
 autocmd FileType java AutoFormatBuffer google-java-format
 autocmd FileType jslayout AutoFormatBuffer jslfmt
-autocmd FileType go AutoFormatBuffer gofmt
+autocmd FileType md AutoFormatBuffer mdformat
 autocmd FileType python AutoFormatBuffer pyformat
 
 " Load YCM (http://go/ycm) for semantic auto-completion and quick syntax
