@@ -1,5 +1,5 @@
 - shell:
-  - command: 'zsh -c "[ -n \"$ZSH_VERSION\" ] || chsh -s $(which zsh)"'
+  - command: '[ -n \"$ZSH_VERSION\" ] || chsh -s $(which zsh)'
     description: Making zsh the default shell
     stdin: true
     stdout: true

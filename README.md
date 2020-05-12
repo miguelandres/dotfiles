@@ -93,6 +93,12 @@ Each configuration is a list of base configs and a list of profiles to run. Thes
 ./install-profile --pull --save-config linux linux-personal raspbian-docker docker-home-server
 ```
 
+### Personal Linux Laptop
+
+```sh
+./install-profile --pull --save-config linux linux-personal linux-gui
+```
+
 ### On my Corp linux:
 
 ```sh
