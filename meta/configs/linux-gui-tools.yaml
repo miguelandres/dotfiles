@@ -1,15 +1,19 @@
 - shell:
   - 'wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - '
-  - 'sudo sh -c ''echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'''
+  - 'sudo sh -c ''echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'''
   - 'sudo apt-get update'
   - 'sudo apt-get install -y google-chrome-stable'
   - 'sudo apt-get install -y gnome-tweak-tool'
   - 'sudo apt-get install -y libglib2.0-dev-bin libxml2-utils gtk2-engines-murrine gtk2-engines-pixbuf'
-  - 'sh -c ''mkdir -p /tmp/theme/ && cd /tmp/theme && git clone git@github.com:vinceliuice/Yosemite-gtk-theme.git && cd Yosemite-gtk-theme && ./Install'''
-  - command: 'sh -c ''mkdir -p ~/.icons && cd ~/.icons && git clone https://github.com/keeferrourke/la-capitaine-icon-theme.git && cd la-capitaine-icon-theme && ./configure'''
+  - 'sudo snap install vlc'
+  - 'sudo snap install spotify'
+  - 'sudo snap install --classic code'
+  - 'sudo snap install obs-studio'
+  - 'sh -c ''mkdir -p /tmp/theme/ && cd /tmp/theme && git clone git@github.com:vinceliuice/Yosemite-gtk-theme.git && cd Yosemite-gtk-theme && ./Install'' || true'
+  - command: 'sh -c ''mkdir -p ~/.icons && cd ~/.icons && git clone https://github.com/keeferrourke/la-capitaine-icon-theme.git && cd la-capitaine-icon-theme && ./configure'' || true'
     quiet: false
     stdin: true
     stderr: true
     stdout: true
   - 'mkdir -p ~/.local/share/fonts'
-  - 'sh -c ''cd ~/.local/share/fonts && curl -fLo "Meslo LG M Regular Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf'''
+  - 'sh -c ''cd ~/.local/share/fonts && curl -fLo "Meslo LG M Regular Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf'' || true'
