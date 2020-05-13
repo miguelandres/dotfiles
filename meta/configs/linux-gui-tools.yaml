@@ -6,6 +6,8 @@
   - 'mkdir -p ~/.local/share/fonts'
   - 'sh -c ''cd ~/.local/share/fonts && curl -fLo "Meslo LG M Regular Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf'' || true'
 - apt:
+  - chrome-gnome-shell
+  - gnome-shell-extensions
   - gnome-tweak-tool
   - google-chrome-stable
   - gtk2-engines-murrine
