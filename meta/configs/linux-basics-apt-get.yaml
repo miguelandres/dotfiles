@@ -1,10 +1,10 @@
 - apt:
-  - zsh
   - curl
+  - fzf
+  - git
   - python3
   - python3-pip
   - tmux
   - vim
-  - git
-  - fzf
-  - zsh-autosuggestions 
+  - zsh
+  - zsh-autosuggestions

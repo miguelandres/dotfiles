@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from subprocess import CalledProcessError, check_call
 from typing import Any, List, Sequence
 
@@ -6,17 +7,17 @@ import dotbot
 
 class Snap(dotbot.Plugin):
     def can_handle(self, directive: str) -> bool:
-        return directive == "snap"
+        return directive == 'snap'
 
     def handle(self, directive: str, packages: List[str]) -> bool:
-        self._log.info("Snap Installing {}".format(", ".join(packages)))
+        self._log.info('Snap Installing {}'.format(', '.join(packages)))
         success = True
         for pkg in packages:
             success = success and self._run(
-                ["sudo", "snap", "install", pkg], "Installing {}. May need to sudo.".format(pkg))
+                ['sudo', 'snap', 'install', pkg], 'Installing {}. May need to sudo.'.format(pkg))
 
         if success:
-            self._log.info("SNAP packages installed successfully")
+            self._log.info('SNAP packages installed successfully')
 
         return success
 
