@@ -6,14 +6,17 @@
   - 'mkdir -p ~/.local/share/fonts'
   - 'sh -c ''cd ~/.local/share/fonts && curl -fLo "Meslo LG M Regular Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf'' || true'
 - apt:
-  - 'gnome-tweak-tool'
-  - 'google-chrome-stable'
-  - 'gtk2-engines-murrine'
-  - 'gtk2-engines-pixbuf'
-  - 'libglib2.0-dev-bin'
-  - 'libxml2-utils'
+  - gnome-tweak-tool
+  - google-chrome-stable
+  - gtk2-engines-murrine
+  - gtk2-engines-pixbuf
+  - libglib2.0-dev-bin
+  - libxml2-utils
 - snap:
-  - 'code'
-  - 'obs-studio'
-  - 'spotify'
-  - 'vlc'
+  - discord
+  - obs-studio
+  - spotify
+  - vlc
+- snap-classic:
+  - code
+  - slack

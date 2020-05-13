@@ -7,14 +7,18 @@ import dotbot
 
 class Snap(dotbot.Plugin):
     def can_handle(self, directive: str) -> bool:
-        return directive == 'snap'
+        return directive == 'snap' or directive == 'snap-classic'
 
     def handle(self, directive: str, packages: List[str]) -> bool:
-        self._log.info('Snap Installing {}'.format(', '.join(packages)))
+        use_classic = False
+        if directive == 'snap-classic':
+            use_classic = True
+
+        self._log.info('Snap {} Installing {}'.format('classic' if use_classic else '', ', '.join(packages)))
         success = True
+        base_command = ['sudo', 'snap', 'install', '--classic'] if use_classic else ['sudo', 'snap', 'install']
         for pkg in packages:
-            success = success and self._run(
-                ['sudo', 'snap', 'install', pkg], 'Installing {}. May need to sudo.'.format(pkg))
+            success = success and self._run(base_command + [pkg], 'Installing {}. May need to sudo.'.format(pkg))
 
         if success:
             self._log.info('SNAP packages installed successfully')
