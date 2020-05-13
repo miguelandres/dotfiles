@@ -1,6 +1,0 @@
-- shell:
-  - '[[ ! $(grep -q docker /etc/group) ]] || ( sudo groupadd docker )'
-  - '[[ $((groups `whoami`) |grep "\bdocker\b") ]] || ( sudo gpasswd -a `whoami` docker )'
-  - '[[ -f "/etc/docker/daemon.json" ]] || sudo cp ~/.dotfiles/etc-docker-daemon.json /etc/docker/daemon.json'
-  - '[[ $(docker -v) ]] || ( curl -fsSL https://get.docker.com -o /tmp/get-docker.sh && sudo sh /tmp/get-docker.sh )'
-  - '( [[ ! -d ~/docker ]] && mkdir ~/docker && sudo chown dockremap:$USER ~/docker ) || true'

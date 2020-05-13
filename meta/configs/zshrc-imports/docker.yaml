@@ -1,0 +1,4 @@
+- link:
+    ~/.zshrc-imports/.zshrc-docker: zsh/zshrc-imports/zshrc-docker
+    ~/.zshrc-imports/.aliases-docker: zsh/zshrc-imports/aliases-docker
+    ~/.zshrc-imports/plugins/.docker: zsh/zshrc-imports/plugins/docker

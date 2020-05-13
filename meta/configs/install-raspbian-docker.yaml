@@ -1,0 +1,3 @@
+- shell:
+  - '[[ $(docker -v) ]] || ( curl -fsSL https://get.docker.com -o /tmp/get-docker.sh && sudo sh /tmp/get-docker.sh )'
+  - '( [[ ! -d ~/docker ]] && mkdir ~/docker && sudo chown dockremap:$USER ~/docker ) || true'

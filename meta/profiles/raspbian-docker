@@ -1,3 +1,4 @@
-raspbian-docker
-raspbian-docker-compose
+user-remap-docker
+install-raspbian-docker
+install-docker-compose
 zshrc-imports/raspbian-docker
