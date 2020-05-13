@@ -32,3 +32,6 @@
 [submodule "dotbot-plugins/dotbot-brew"]
 	path = dotbot-plugins/dotbot-brew
 	url = git@github.com:d12frosted/dotbot-brew.git
+[submodule "dotbot-plugins/dotbot-vscode"]
+	path = dotbot-plugins/dotbot-vscode
+	url = git@github.com:hujianxin/dotbot-vscode.git

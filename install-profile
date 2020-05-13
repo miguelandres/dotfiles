@@ -81,5 +81,5 @@ done
 for file in ${CONFIG_FILES[@]}
 do
   echo "${bold}Processing file $file"
-  python3 "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "$file" --plugin-dir "${BASE_DIR}/dotbot-plugins/" --plugin-dir "${BASE_DIR}/dotbot-plugins/dotbot-brew/"
+  python3 "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "$file" --plugin-dir "${BASE_DIR}/dotbot-plugins/" --plugin-dir "${BASE_DIR}/dotbot-plugins/dotbot-vscode/" --plugin-dir "${BASE_DIR}/dotbot-plugins/dotbot-brew/"
 done

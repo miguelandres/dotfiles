@@ -8,3 +8,4 @@ zshrc-imports/mac
 mac-defaults/base
 tmux
 brewfile-mac
+vscode
