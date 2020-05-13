@@ -3,6 +3,11 @@
       force: true
       create: true
       relink: true
+    shell:
+      quiet: false
+      stdin: true
+      stdout: true
+      stderr: trueS
 - clean: ['~', "~/.ssh/", "~/.vim/", "~/.zshrc-imports/", "~/.zshrc-imports/plugins/"]
 - create:
     - ~/.zshrc-imports

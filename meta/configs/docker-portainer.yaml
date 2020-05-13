@@ -1,6 +1,2 @@
 - shell:
-  - command:  'docker-compose -f ~/.dotfiles/docker/portainer/docker-compose.yml up -d'
-    quiet: false
-    stdin: true
-    stdout: true
-    stderr: true
+  - 'docker-compose -f ~/.dotfiles/docker/portainer/docker-compose.yml up -d'

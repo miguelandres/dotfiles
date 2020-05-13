@@ -1,5 +1,4 @@
-brew
-brewfile-mac-basics
+mac-basics
 mackup-config
 vim
 zsh-standard

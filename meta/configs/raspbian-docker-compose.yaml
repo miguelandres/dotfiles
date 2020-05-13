@@ -1,7 +1,6 @@
+- apt:
+  - libffi-dev
+  - libssl-dev
+  - python-configparser
 - shell:
-  - PACKAGE_TO_INSTALL=libffi-dev; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
-  - PACKAGE_TO_INSTALL=libssl-dev; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
-  - PACKAGE_TO_INSTALL=python3; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
-  - PACKAGE_TO_INSTALL=python3-pip; dpkg -s $PACKAGE_TO_INSTALL || sudo apt-get -y install $PACKAGE_TO_INSTALL
-  - PACKAGE_TO_REMOVE=python-configparser; [[ ! $(dpkg -s $PACKAGE_TO_REMOVE) ]] || sudo apt-get remove $PACKAGE_TO_REMOVE
   - PACKAGE_TO_INSTALL=docker-compose; pip3 show $PACKAGE_TO_INSTALL || sudo pip3 install docker-compose $PACKAGE_TO_INSTALL

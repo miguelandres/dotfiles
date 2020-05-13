@@ -29,3 +29,6 @@
 	path = vim/bundle/bbye
 	url = git@github.com:moll/vim-bbye.git
 	branch = master
+[submodule "dotbot-plugins/dotbot-brew"]
+	path = dotbot-plugins/dotbot-brew
+	url = git@github.com:d12frosted/dotbot-brew.git

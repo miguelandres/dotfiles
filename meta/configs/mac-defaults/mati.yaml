@@ -1,6 +1,2 @@
 - shell:
-  - command: sh ~/.dotfiles/mac/defaults-mati
-    quiet: false
-    stdin: true
-    stdout: true
-    stderr: true
+  - sh ~/.dotfiles/mac/defaults-mati
