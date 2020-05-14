@@ -4,6 +4,7 @@ alias cdsrc="cd ~/src"
 alias week='date +%V'
 
 alias refresh=$HOME/.dotfiles/refresh-dotfiles
+alias fix_submodules='git submodule update --recursive --init'
 
 # better zz from fasd
 function zz() {
