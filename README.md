@@ -65,6 +65,13 @@ My modifications are as follows:
 ### Configurations
 Each configuration is a list of base configs and a list of profiles to run. These are run in the order in which they were declared in the invocation.
 
+## Known Issues
+
+When running for the first time, vim plugin installation *will* fail. Don't
+worry too much, hit enter until you get to vim's normal interface and type
+`:PluginInstall`, hit enter, wait until it finishes and then type `:qall` and
+hit enter. Feel free to retry the same command.
+
 ## macOS
 
 ### Personal mac
