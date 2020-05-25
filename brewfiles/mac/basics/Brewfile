@@ -15,6 +15,7 @@ brew "zsh-autosuggestions"
 cask "font-meslolg-nerd-font"
 
 cask "disk-inventory-x"
+cask "firefox"
 cask "google-chrome"
 cask "google-backup-and-sync"
 cask "iterm2"
