@@ -126,6 +126,16 @@ autocmd FileType python AutoFormatBuffer pyformat
 " a google3-specific default configuration.
 Glug youcompleteme-google
 
+Glug outline-window
+nnoremap <Leader>g :GoogleOutlineWindow<CR>
+
+Glug add_usings plugin[mappings]
+Glug refactorer
+Glug ultisnips-google
+let g:UltiSnipsExpandTrigger = "<c-j>"
+let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+
 " Load piper integration (http://wiki/Main/VimPerforce).
 Glug piper plugin[mappings]
 
