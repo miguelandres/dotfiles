@@ -19,9 +19,6 @@
     ~/.oh-my-zsh/custom/plugins/zsh-vim-mode:
       force: true
       path:  zsh/custom/plugins/zsh-vim-mode
-    ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
-      force: true
-      path:  zsh/custom/themes/bullet-train.zsh-theme
     ~/.oh-my-zsh/custom/themes/powerlevel10k:
       force: true
       path:  zsh/custom/themes/powerlevel10k
