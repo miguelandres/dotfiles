@@ -16,6 +16,8 @@ cask "font-meslolg-nerd-font"
 
 cask "disk-inventory-x"
 cask "firefox"
+cask "homebrew/cask-versions/firefox-developer-edition"
+cask "multifirefox"
 cask "google-chrome"
 cask "google-backup-and-sync"
 cask "iterm2"
