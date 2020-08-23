@@ -3,3 +3,4 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 # This file is not present in apt-get in raspbian, but it still works
 source /usr/share/doc/fzf/examples/completion.zsh 2>/dev/null
+export PATH=$PATH:/snap/bin
