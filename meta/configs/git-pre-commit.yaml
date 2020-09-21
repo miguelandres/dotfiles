@@ -1,3 +1,3 @@
 - shell:
-    - '([[ $(command -v snap) != "" ]] && sudo snap install pre-commit --classic) || echo "Snap not installed, is this mac os? maybe pre-commit will be installed by brew"'
+    - pip3 install pre-commit
     - 'zsh -c "cd ~/.dotfiles && pre-commit install"'
