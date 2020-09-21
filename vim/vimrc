@@ -12,9 +12,9 @@ call vundle#begin()
 
   Plugin 'benmills/vimux'
   Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'google/vim-maktaba'
   Plugin 'google/vim-codefmt'
   Plugin 'google/vim-glaive'
-  Plugin 'google/vim-maktaba'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'tpope/vim-sensible'
   "Not working on Raspberry pi
