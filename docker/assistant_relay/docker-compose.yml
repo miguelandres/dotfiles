@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    assistant-relay:
+        container_name: assistant_relay
+        ports:
+            - '3000:3000'
+        volumes:
+            - '~/docker/assistant_relay/:/data/:rw'
+        image: 'apipa169/armv7-hassio-assistant_relay:latest'
