@@ -3,5 +3,5 @@
   - 'docker-compose -f ~/.dotfiles/docker/pihole/docker-compose.yml up -d'
   - 'docker exec pihole pihole -w t.co analytics.twitter.com'
   - 'docker exec pihole pihole -w graph.instagram.com'
-  - 'docker exec pihole pihole -w www.googleadservices.com'
+  - 'docker exec pihole pihole -w www.googleadservices.com analytics.google.com'
   - 'docker exec pihole pihole -l off'
