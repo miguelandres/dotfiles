@@ -89,6 +89,9 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 dockutil --remove all --no-restart
 dockutil --add "/Applications/Safari.app" --no-restart
 dockutil --add "/Applications/Google Chrome.app" --no-restart
+dockutil --add "/Applications/Firefox.app" --no-restart
+dockutil --add "/Applications/Firefox Developer Edition.app" --no-restart
+dockutil --add "/Applications/Adobe Lightroom CC/Adobe Lightroom.app" --no-restart
 dockutil --add "/System/Applications/Messages.app" --no-restart
 dockutil --add "/Applications/Dashlane.app" --no-restart
 dockutil --add "/Applications/TextMate.app" --no-restart
@@ -99,7 +102,6 @@ dockutil --add "/Applications/Microsoft OneNote.app" --no-restart
 dockutil --add "/Applications/Spotify.app" --no-restart
 dockutil --add "/Applications/Discord.app" --no-restart
 dockutil --add "/Applications/Slack.app" --no-restart
-dockutil --add "/Applications/WhatsApp.app" --no-restart
 dockutil --add "/Applications/WeChat.app" --no-restart
 dockutil --add "/Applications/LINE.app" --no-restart
 dockutil --add "/Applications/KakaoTalk.app" --no-restart

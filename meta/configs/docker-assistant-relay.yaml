@@ -1,0 +1,3 @@
+- shell:
+  - '( [[ ! -d ~/docker/assistant_relay ]] && mkdir -p ~/docker/assistant_relay && sudo chown -R dockremap:$USER ~/docker/assistant_relay && sudo chmod -R 775 ~/docker/assistant_relay) || true'
+  - 'docker-compose -f ~/.dotfiles/docker/assistant_relay/docker-compose.yml up -d'

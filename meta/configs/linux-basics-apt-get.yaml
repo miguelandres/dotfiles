@@ -2,9 +2,11 @@
   - curl
   - fzf
   - git
+  - nfs-common
   - python3
   - python3-pip
   - tmux
+  - snapd
   - vim
   - zsh
   - zsh-autosuggestions

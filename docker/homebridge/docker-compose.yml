@@ -6,6 +6,8 @@ services:
     restart: always
     network_mode: host
     userns_mode: host
+    ports:
+      - "8080:8080"
     environment:
       - TZ=America/New_York
       - HOMEBRIDGE_CONFIG_UI=1

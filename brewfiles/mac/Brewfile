@@ -14,6 +14,7 @@ brew "vim"
 cask "basictex"
 cask "discord"
 cask "github"
+cask "netnewswire"
 cask "spotify"
 cask "steam"
 cask "visual-studio-code"
@@ -25,5 +26,6 @@ mas "LINE", id:539883307
 mas "Microsoft OneNote", id:784801555
 mas "Parcel", id:639968404
 mas "Slack", id:803453959
+mas "Tooth Fairy", id:1191449274
 mas "Twitter", id:1482454543
 mas "Wechat", id:836500024
