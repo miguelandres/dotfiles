@@ -1,4 +1,8 @@
-- link:
-    ~/.gitconfig:
-      path: gitconfig-mati
+- defaults:
+    link:
       force: true
+      create: true
+      relink: true
+
+- link:
+    ~/.gitconfig: gitconfig-mati

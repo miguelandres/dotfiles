@@ -1,3 +1,9 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
 - link:
     ~/.zshrc-imports/.zshrc-linux: zsh/zshrc-imports/zshrc-linux
     ~/.zshrc-imports/.aliases-linux: zsh/zshrc-imports/aliases-linux

@@ -1,3 +1,10 @@
+- defaults:
+    shell:
+      quiet: false
+      stdin: true
+      stdout: true
+      stderr: true
+
 - shell:
   - '( [[ ! -d ~/docker/pihole-data ]] && mkdir -p ~/docker/pihole-data && sudo chown -R dockremap:$USER ~/docker/pihole-data && sudo chmod -R 775 ~/docker/pihole-data) || true'
   - 'docker-compose -f ~/.dotfiles/docker/pihole/docker-compose.yml up -d'

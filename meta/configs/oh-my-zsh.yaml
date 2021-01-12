@@ -1,24 +1,21 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+    shell:
+      quiet: false
+      stdin: true
+      stdout: true
+      stderr: true
+
 - shell:
   - 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended || true'
-- create:
-  - ~/.oh-my-zsh/custom/
-  - ~/.oh-my-zsh/custom/plugins
-  - ~/.oh-my-zsh/custom/themes
 - link:
-    ~/.zshrc:
-      force: true
-      path: zsh/zshrc
+    ~/.zshrc: zsh/zshrc
     ~/.p10k.zsh: zsh/p10k.zsh
     ~/.zshenv: zsh/zshenv
-    ~/.oh-my-zsh/custom/plugins/alias-tips:
-      force: true
-      path:  zsh/custom/plugins/alias-tips
-    ~/.oh-my-zsh/custom/plugins/zsh-completions:
-      force: true
-      path:  zsh/custom/plugins/zsh-completions
-    ~/.oh-my-zsh/custom/plugins/zsh-vim-mode:
-      force: true
-      path:  zsh/custom/plugins/zsh-vim-mode
-    ~/.oh-my-zsh/custom/themes/powerlevel10k:
-      force: true
-      path:  zsh/custom/themes/powerlevel10k
+    ~/.oh-my-zsh/custom/plugins/alias-tips: zsh/custom/plugins/alias-tips
+    ~/.oh-my-zsh/custom/plugins/zsh-completions: zsh/custom/plugins/zsh-completions
+    ~/.oh-my-zsh/custom/plugins/zsh-vim-mode: zsh/custom/plugins/zsh-vim-mode
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: zsh/custom/themes/powerlevel10k

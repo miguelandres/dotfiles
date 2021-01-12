@@ -1,4 +1,8 @@
-- link:
-    ~/.gitconfig:
-      path: gitconfig
+- defaults:
+    link:
       force: true
+      create: true
+      relink: true
+
+- link:
+    ~/.gitconfig: gitconfig
