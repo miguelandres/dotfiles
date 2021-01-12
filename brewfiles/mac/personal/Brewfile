@@ -11,6 +11,5 @@ cask "obs"
 cask "soundflower"
 
 mas "Excel", id:462058435
-mas "Outlook", id:985367838
 mas "PowerPoint", id:462062816
 mas "Word", id:462054704

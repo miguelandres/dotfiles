@@ -6,7 +6,6 @@ cask_args appdir: '/Applications'
 
 brew "dockutil"
 brew "fzf"
-brew "mackup"
 brew "mas"
 brew "pre-commit"
 brew "tmux"
@@ -20,7 +19,6 @@ cask "firefox"
 cask "homebrew/cask-versions/firefox-developer-edition"
 cask "multifirefox"
 cask "google-chrome"
-cask "google-backup-and-sync"
 cask "iterm2"
 cask "mysides"
 
@@ -28,5 +26,4 @@ mas "BetterSnapTool", id:417375580
 mas "Dashlane", id:552383089
 mas "Theine", id:955848755
 mas "Things", id:904280696
-# Xcode takes too long to install. Not the right time for this
-#mas "Xcode", id:497799835
+mas "Tooth Fairy", id:1191449274
