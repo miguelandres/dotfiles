@@ -6,6 +6,6 @@
       stderr: true
 
 - shell:
-  - '[[ $(command -v brew) != "" ]] || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+  - '[[ $(command -v brew) != "" ]] || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'
 - brewfile:
   - brewfiles/mac/basics/Brewfile
