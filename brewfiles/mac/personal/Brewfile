@@ -5,7 +5,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 cask_args appdir: '/Applications'
 
-brew "github/gh/gh"
+brew "gh"
 
 # Youtubedl stuff
 brew "youtube-dl"
