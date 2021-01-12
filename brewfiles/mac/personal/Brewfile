@@ -10,7 +10,7 @@ brew "gh"
 # Youtubedl stuff
 brew "youtube-dl"
 brew "ffmpeg"
-brew "aria2c"
+brew "aria2"
 
 
 cask "obs"
