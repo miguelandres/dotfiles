@@ -7,6 +7,12 @@ cask_args appdir: '/Applications'
 
 brew "github/gh/gh"
 
+# Youtubedl stuff
+brew "youtube-dl"
+brew "ffmpeg"
+brew "aria2c"
+
+
 cask "obs"
 cask "soundflower"
 
