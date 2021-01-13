@@ -1,2 +1,8 @@
+- defaults:
+    brewfile:
+      auto_bootstrap: false
+      stdin: true
+      stdout: true
+      stderr: true
 - brewfile:
   - brewfiles/mac/personal/Brewfile

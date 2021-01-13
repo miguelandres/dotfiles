@@ -1,11 +1,15 @@
 - defaults:
-    shell:
-      quiet: false
+    installBrew:
       stdin: true
       stdout: true
       stderr: true
-
-- shell:
-  - '[[ $(command -v brew) != "" ]] || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'
+    brewfile:
+      auto_bootstrap: false
+      stdin: true
+      stdout: true
+      stderr: true
+- installBrew:
+  - brew
+  - cask
 - brewfile:
   - brewfiles/mac/basics/Brewfile
