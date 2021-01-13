@@ -12,7 +12,7 @@ brew "tmux"
 brew "zsh"
 brew "zsh-autosuggestions"
 
-cask "font-meslolg-nerd-font"
+cask "font-meslo-lg-nerd-font"
 
 cask "disk-inventory-x"
 cask "firefox"
