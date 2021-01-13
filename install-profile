@@ -58,6 +58,7 @@ fi
 
 if $EXECUTE_PULL; then
   git pull --recurse-submodules
+  git submodule update --init --recursive --remote
 fi
 
 CONFIG_FILES=()
