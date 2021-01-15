@@ -1,3 +1,10 @@
+- defaults:
+    shell:
+      quiet: false
+      stdin: true
+      stdout: true
+      stderr: true
+
 - shell:
   - '[[ ! $(grep -q docker /etc/group) ]] || sudo groupadd docker'
   - '[[ $((groups `whoami`) |grep "\bdocker\b") ]] || ( sudo gpasswd -a `whoami` docker )'

@@ -1,3 +1,10 @@
+- defaults:
+    shell:
+      quiet: false
+      stdin: true
+      stdout: true
+      stderr: true
+
 - shell:
   - '( [[ ! -d ~/docker/nodered ]] && mkdir -p ~/docker/nodered && sudo chown -R dockremap:$USER ~/docker/nodered && sudo chmod -R 775 ~/docker/nodered) || true'
   - 'docker-compose -f ~/.dotfiles/docker/nodered/docker-compose.yml up -d'

@@ -1,3 +1,10 @@
+- defaults:
+    shell:
+      quiet: false
+      stdin: true
+      stdout: true
+      stderr: true
+
 - shell:
   - 'DIR=~/docker/homebridge; ( [[ ! -d $DIR ]] && mkdir -p $DIR && sudo chown -R dockremap:$USER $DIR && sudo chmod -R 775 $DIR) || true'
   - 'docker-compose -f ~/.dotfiles/docker/homebridge/docker-compose.yml up -d'

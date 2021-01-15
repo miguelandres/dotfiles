@@ -1,6 +1,15 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+    shell:
+      quiet: false
+      stdin: true
+      stdout: true
+      stderr: true
+
 - shell:
   - '[ -n \"$ZSH_VERSION\" ] || chsh -s $(which zsh)'
 - link:
-    ~/.zshrc:
-      force: true
-      path: zsh/zshrc
+    ~/.zshrc: zsh/zshrc

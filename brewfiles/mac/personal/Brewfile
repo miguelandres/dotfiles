@@ -5,12 +5,17 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 cask_args appdir: '/Applications'
 
-brew "github/gh/gh"
+brew "gh"
+
+# Youtubedl stuff
+brew "youtube-dl"
+brew "ffmpeg"
+brew "aria2"
+
 
 cask "obs"
 cask "soundflower"
 
 mas "Excel", id:462058435
-mas "Outlook", id:985367838
 mas "PowerPoint", id:462062816
 mas "Word", id:462054704

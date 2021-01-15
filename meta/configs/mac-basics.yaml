@@ -1,4 +1,15 @@
-- shell:
-    - '[[ $(command -v brew) != "" ]] || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+- defaults:
+    installBrew:
+      stdin: true
+      stdout: true
+      stderr: true
+    brewfile:
+      auto_bootstrap: false
+      stdin: true
+      stdout: true
+      stderr: true
+- installBrew:
+  - brew
+  - cask
 - brewfile:
   - brewfiles/mac/basics/Brewfile

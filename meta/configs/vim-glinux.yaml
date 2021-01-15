@@ -1,12 +1,13 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
+
 - link:
-    ~/.vimrc:
-        path:  vim/vimrc-glinux
-        force: true
-    ~/.vim/bundle/bbye:
-        path:  vim/bundle/bbye
-        force: true
-    ~/.vim/bundle/Vundle.vim:
-        path:  vim/bundle/Vundle.vim
-        force: true
+    ~/.vimrc: vim/vimrc-glinux
+    ~/.vim/bundle/bbye: vim/bundle/bbye
+    ~/.vim/bundle/Vundle.vim: vim/bundle/Vundle.vim
 - shell:
    - 'vim +PluginInstall +qall'

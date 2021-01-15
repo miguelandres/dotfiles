@@ -7,7 +7,7 @@
       quiet: false
       stdin: true
       stdout: true
-      stderr: trueS
+      stderr: true
 - clean: ['~', "~/.ssh/", "~/.vim/", "~/.zshrc-imports/", "~/.zshrc-imports/plugins/"]
 - create:
     - ~/.zshrc-imports

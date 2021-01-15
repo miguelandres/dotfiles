@@ -1,3 +1,9 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
 - link:
     ~/.zshrc-imports/.zshrc-docker: zsh/zshrc-imports/zshrc-docker
     ~/.zshrc-imports/.aliases-docker: zsh/zshrc-imports/aliases-docker

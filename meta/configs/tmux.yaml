@@ -1,7 +1,9 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
 - link:
-    ~/.tmux.conf:
-      force: true
-      path: tmux/tmux.conf
-    ~/.tmux/plugins/tpm:
-      force: true
-      path:  tmux/plugins/tpm
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux/plugins/tpm: tmux/plugins/tpm

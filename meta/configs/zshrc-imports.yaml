@@ -1,2 +1,8 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
 - link:
     ~/.zshrc-imports/.aliases: zsh/zshrc-imports/aliases

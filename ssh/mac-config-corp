@@ -1,8 +1,10 @@
 Host raspberrypi
+  HostName 192.168.86.250
   PreferredAuthentications keyboard-interactive,password
   PubkeyAuthentication no
 
-Host 192.168.86.250
+Host alexandria
+  HostName 192.168.86.31
   PreferredAuthentications keyboard-interactive,password
   PubkeyAuthentication no
 

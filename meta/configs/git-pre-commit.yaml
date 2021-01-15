@@ -1,3 +1,10 @@
+- defaults:
+    shell:
+      quiet: false
+      stdin: true
+      stdout: true
+      stderr: true
+
 - shell:
     - pip3 install pre-commit
     - 'zsh -c "cd ~/.dotfiles && pre-commit install"'
