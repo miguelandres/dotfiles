@@ -40,10 +40,7 @@ ms-vscode.powershell
 vscjava.vscode-java-dependency
 ms-python.python
 tht13.python
-ms-vscode-remote.remote-containers
-ms-vscode-remote.remote-ssh
-ms-vscode-remote.remote-ssh-edit
-ms-vscode-remote.remote-wsl
+ms-vscode-remote.vscode-remote-extensionpack
 scalameta.metals
 scala-lang.scala
 wayou.vscode-todo-highlight
