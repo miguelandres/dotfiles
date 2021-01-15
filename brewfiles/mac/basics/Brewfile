@@ -23,6 +23,7 @@ cask "multifirefox"
 cask "google-chrome"
 cask "iterm2"
 cask "mysides"
+cask "witch"
 
 mas "BetterSnapTool", id:417375580
 mas "Dashlane", id:552383089
