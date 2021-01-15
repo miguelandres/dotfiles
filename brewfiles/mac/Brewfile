@@ -9,6 +9,8 @@ brew "graphviz"
 brew "pre-commit"
 brew "python"
 brew "python3"
+brew "sbt"
+brew "scala"
 brew "vim"
 
 cask "basictex"
