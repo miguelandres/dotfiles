@@ -8,6 +8,8 @@ services:
     userns_mode: host
     ports:
       - "8080:8080"
+      # Samsung Smartthings incoming port
+      - "12345:12345"
     environment:
       - TZ=America/New_York
       - HOMEBRIDGE_CONFIG_UI=1
