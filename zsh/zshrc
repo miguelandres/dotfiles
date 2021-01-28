@@ -6,7 +6,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 export ZSH_DISABLE_COMPFIX=true
 
-eval $(/opt/homebrew/bin/brew shellenv)
+#uncomment to use M1 brew
+#eval $(/opt/homebrew/bin/brew shellenv)
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
