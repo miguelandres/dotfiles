@@ -14,7 +14,7 @@ brew "aria2"
 
 
 cask "obs"
-cask "soundflower"
+cask "blackhole-16ch"
 
 mas "Excel", id:462058435
 mas "PowerPoint", id:462062816
