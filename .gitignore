@@ -3,6 +3,9 @@
 **/*.swp
 **/.DS_Store
 
+# VScode specific config
+.vscode/**
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
