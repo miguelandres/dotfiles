@@ -76,7 +76,7 @@ plugins=(alias-tips common-aliases copydir extract fancy-ctrl-z fasd git history
 for file in ~/.zshrc-imports/plugins/.*; do
   source "$file"
 done
-
+plugins+=(zsh-syntax-highlighting)
 # Here for zsh-completions
 autoload -U compinit && compinit
 
