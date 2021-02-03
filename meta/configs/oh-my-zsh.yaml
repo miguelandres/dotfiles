@@ -17,5 +17,6 @@
     ~/.zshenv: zsh/zshenv
     ~/.oh-my-zsh/custom/plugins/alias-tips: zsh/custom/plugins/alias-tips
     ~/.oh-my-zsh/custom/plugins/zsh-completions: zsh/custom/plugins/zsh-completions
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh/custom/plugins/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/plugins/zsh-vim-mode: zsh/custom/plugins/zsh-vim-mode
     ~/.oh-my-zsh/custom/themes/powerlevel10k: zsh/custom/themes/powerlevel10k
