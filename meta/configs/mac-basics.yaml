@@ -1,9 +1,11 @@
 - defaults:
     installBrew:
+      force_intel: true
       stdin: true
       stdout: true
       stderr: true
     brewfile:
+      force_intel: true
       auto_bootstrap: false
       stdin: true
       stdout: true

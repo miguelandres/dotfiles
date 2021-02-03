@@ -63,8 +63,8 @@ dockutil --add "/System/Applications/System Preferences.app" --no-restart
 dockutil --add "/System/Applications/Utilities/Activity Monitor.app" --no-restart
 dockutil --add "/System/Applications/TV.app" --no-restart
 dockutil --add "/Applications/Utilities/Adobe Creative Cloud/ACC/Creative Cloud.app" --no-restart
-dockutil --add "/Applications/Adobe Photoshop 2020/Adobe Photoshop 2020.app" --no-restart
-dockutil --add "/Applications/Adobe Illustrator 2020/Adobe Illustrator.app" --no-restart
+dockutil --add "/Applications/Adobe Photoshop 2021/Adobe Photoshop 2021.app" --no-restart
+dockutil --add "/Applications/Adobe Illustrator 2021/Adobe Illustrator 2021.app" --no-restart
 dockutil --add "/Applications/OBS.app" --no-restart
 dockutil --add "/Applications/VLC.app" --no-restart
 
