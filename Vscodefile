@@ -21,6 +21,7 @@ ms-vscode.cpptools-extension-pack
 ms-vsliveshare.vsliveshare-pack
 redhat.java
 redhat.vscode-yaml
+rust-lang.rust
 scala-lang.scala
 scalameta.metals
 slevesque.vscode-zipexplorer
