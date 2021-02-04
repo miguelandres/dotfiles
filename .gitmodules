@@ -40,3 +40,6 @@
 	path = zsh/custom/plugins/zsh-syntax-highlighting
 	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
 	branch = master
+[submodule "zsh/custom/plugins/zsh-autosuggestions"]
+	path = zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions

@@ -7,6 +7,7 @@ cask_args appdir: '/Applications'
 
 brew "dockutil"
 brew "fzf"
+brew "hub"
 brew "mas"
 brew "pre-commit"
 brew "tmux"
