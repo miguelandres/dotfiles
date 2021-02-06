@@ -1,20 +1,31 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.4.0
+    rev: fb9fc7b71b63ea94e7cfb70f4351e9bddea181d3
     hooks:
       - id: check-added-large-files
       - id: check-ast
       - id: check-builtin-literals
-      - id: debug-statements
-      - id: fix-encoding-pragma
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
       - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-vcs-permalinks
       - id: check-yaml
+      - id: debug-statements
+      - id: destroyed-symlinks
       - id: detect-private-key
       - id: double-quote-string-fixer
       - id: end-of-file-fixer
-      - id: pretty-format-json
-      - id: trailing-whitespace
-      - id: check-merge-conflict
-      - id: check-executables-have-shebangs
-      - id: check-vcs-permalinks
+      - id: fix-byte-order-marker
+      - id: fix-encoding-pragma
       - id: mixed-line-ending
+      - id: pretty-format-json
+      - id: sort-simple-yaml
+      - id: trailing-whitespace
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 2.1.4 # or specific git tag
+    hooks:
+      - id: forbid-binary
+      - id: git-dirty
+      - id: markdownlint

@@ -1,8 +1,10 @@
+#!/usr/bin/env powershell
+
 #Requires -RunAsAdministrator
 
 function Test-Command {
     param($Command)
-  
+
     $found = $false
     $match = [Regex]::Match($Command, "(?<Verb>[a-z]{3,11})-(?<Noun>[a-z]{3,})", "IgnoreCase")
     if($match.Success) {
