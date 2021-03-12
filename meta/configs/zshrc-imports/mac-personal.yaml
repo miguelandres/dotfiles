@@ -5,6 +5,6 @@
       relink: true
 
 - link:
-    ~/.zshrc-imports/.zshrc-mac: zsh/zshrc-imports/zshrc-mac
-    ~/.zshrc-imports/.aliases-mac: zsh/zshrc-imports/aliases-mac
-    ~/.zshrc-imports/plugins/.mac: zsh/zshrc-imports/plugins/mac
+    ~/.zshrc-imports/.zshrc-mac-personal: zsh/zshrc-imports/zshrc-mac-personal
+    ~/.zshrc-imports/.aliases-mac-personal: zsh/zshrc-imports/aliases-mac-personal
+    ~/.zshrc-imports/plugins/.mac-personal: zsh/zshrc-imports/plugins/mac-personal

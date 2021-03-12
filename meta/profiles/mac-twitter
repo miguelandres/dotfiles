@@ -1,4 +1,5 @@
 cloud-tools-mac
-gitconfig
+gitconfig-twitter
 mac-defaults/migue
 zshrc-imports/mac-cloud
+zshrc-imports/mac-twitter

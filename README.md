@@ -89,7 +89,7 @@ hit enter. Feel free to retry the same command.
 ### Work Mac
 
 ```sh
-./install-profile --pull --save-config --base-configs=base,base-gmac mac mac-corp
+./install-profile --pull --save-config mac mac-twitter
 ```
 
 
@@ -104,19 +104,6 @@ hit enter. Feel free to retry the same command.
 
 ```sh
 ./install-profile --pull --save-config linux linux-personal linux-gui
-```
-
-### On my Corp linux:
-
-```sh
-./install-profile --pull --save-config --base-configs=base,base-glinux linux glinux
-```
-
-## [mackup](https://github.com/lra/mackup)
-
-After Google Drive is configured, you can run the following command to sync application configuration
-```sh
-mackup restore && mackup backup
 ```
 
 Look at mackup/mackup.cfg to see what will not be synced (or maybe customize it and just choose apps manually)

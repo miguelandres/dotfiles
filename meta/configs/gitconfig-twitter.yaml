@@ -1,0 +1,8 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
+- link:
+    ~/.gitconfig: gitconfig-twitter
