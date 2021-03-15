@@ -28,7 +28,7 @@ cask "iterm2"
 cask "mysides"
 cask "witch"
 
-mas "BetterSnapTool", id:417375580
+mas "Magnet", id:441258766
 mas "Dashlane", id:552383089
 mas "Dashlane for Safari", id:1505779553
 mas "Hush", id:1544743900
