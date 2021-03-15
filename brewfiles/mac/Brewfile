@@ -22,7 +22,6 @@ cask "signal"
 cask "steam"
 cask "visual-studio-code"
 cask "vlc"
-cask "zoom"
 
 mas "GoodNotes", id:1444383602
 mas "Edison Mail", id:1489591003
