@@ -15,6 +15,7 @@
     ~/.zshrc: zsh/zshrc
     ~/.p10k.zsh: zsh/p10k.zsh
     ~/.zshenv: zsh/zshenv
+    ~/.oh-my-zsh/custom/plugins/arcanist-tw: zsh/custom/plugins/arcanist-tw
     ~/.oh-my-zsh/custom/plugins/alias-tips: zsh/custom/plugins/alias-tips
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh/custom/plugins/zsh-autosuggestions
     ~/.oh-my-zsh/custom/plugins/zsh-completions: zsh/custom/plugins/zsh-completions

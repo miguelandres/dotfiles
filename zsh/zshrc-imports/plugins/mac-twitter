@@ -1,1 +1,1 @@
-plugins+=(arcanist)
+plugins+=(arcanist arcanist-tw)
