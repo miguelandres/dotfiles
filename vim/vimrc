@@ -21,6 +21,8 @@ call vundle#begin()
   "Plugin 'Valloric/MatchTagAlways'
   " Not working in my installs other than glinux
   "Plugin 'SirVer/ultisnips'
+  Bundle 'Rykka/riv.vim'
+
 
   " Snippets for ultisnips are separated from the engine. keep as last.
   "Plugin 'honza/vim-snippets'
