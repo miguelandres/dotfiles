@@ -15,6 +15,7 @@ call vundle#begin()
   Plugin 'google/vim-maktaba'
   Plugin 'google/vim-codefmt'
   Plugin 'google/vim-glaive'
+  Plugin 'rust-lang/rust.vim'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'tpope/vim-sensible'
   "Not working on Raspberry pi
