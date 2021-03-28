@@ -14,4 +14,4 @@
     ~/.vim/bundle/bbye: vim/bundle/bbye
     ~/.vim/bundle/Vundle.vim: vim/bundle/Vundle.vim
 - shell:
-   - 'vim -s vim/install.vimscript'
+   - 'vim -s vim/install.vimscript || vim -s vim/install.vimscript'
