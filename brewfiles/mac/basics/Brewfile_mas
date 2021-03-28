@@ -1,33 +1,3 @@
-# Brewfile
-brew "cask"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-drivers"
-cask_args appdir: '/Applications'
-
-brew "dockutil"
-brew "fzf"
-brew "hub"
-brew "mas"
-brew "pre-commit"
-brew "shellcheck"
-brew "shfmt"
-brew "tmux"
-brew "zsh"
-brew "zsh-autosuggestions"
-
-cask "font-meslo-lg-nerd-font"
-
-cask "disk-inventory-x"
-cask "firefox"
-cask "homebrew/cask-versions/firefox-developer-edition"
-cask "logitech-options"
-cask "multifirefox"
-cask "google-chrome"
-cask "iterm2"
-cask "mysides"
-cask "witch"
-
 mas "Magnet", id:441258766
 mas "Dashlane", id:552383089
 mas "Dashlane for Safari", id:1505779553
