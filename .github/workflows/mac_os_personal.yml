@@ -19,4 +19,4 @@ jobs:
           submodules: true
 
       - name: install
-        run: TERM=dumb sudo ./install-profile --pull --save-config mac mac-personal
+        run: TERM=dumb ./install-profile --pull --save-config mac mac-personal
