@@ -1,4 +1,6 @@
 brew "mas"
+# Moved to this file since it fails in C/I on Github Actions
+brew "go"
 
 mas "GoodNotes", id:1444383602
 mas "Edison Mail", id:1489591003

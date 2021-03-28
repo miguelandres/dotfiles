@@ -4,7 +4,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 cask_args appdir: '/Applications'
 
-brew "go"
+# Moved to Brewfile_mas since it doesn't work on gh actions
+# brew "go"
 brew "graphviz"
 brew "pre-commit"
 brew "python"
