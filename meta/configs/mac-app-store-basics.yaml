@@ -6,5 +6,4 @@
       stdout: true
       stderr: true
 - brewfile:
-  - brewfiles/mac/personal/Brewfile
-  - brewfiles/mac/personal/Brewfile_mas
+  - brewfiles/mac/basics/Brewfile_mas

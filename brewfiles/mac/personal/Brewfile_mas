@@ -16,3 +16,7 @@ brew "aria2"
 cask "obs"
 cask "blackhole-2ch"
 cask "blackhole-16ch"
+
+mas "Excel", id:462058435
+mas "PowerPoint", id:462062816
+mas "Word", id:462054704

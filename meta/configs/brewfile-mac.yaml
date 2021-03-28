@@ -7,3 +7,4 @@
       stderr: true
 - brewfile:
   - brewfiles/mac/Brewfile
+  - brewfiles/mac/Brewfile_mas
