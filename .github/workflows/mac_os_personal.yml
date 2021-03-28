@@ -16,14 +16,11 @@ jobs:
     env:
       TERM: xterm-256color
     steps:
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      - name: 'Pip yaml'
-        run: pip install pyyaml
       - uses: actions/checkout@v2
         with:
           submodules: true
+      - name: "Submodules"
+        run: git submodule update --init --recursive --remote
 
       - name: install
         run: ./install-profile --pull --save-config mac mac-personal
