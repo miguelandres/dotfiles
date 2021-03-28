@@ -6,5 +6,5 @@ zshrc-imports
 zshrc-imports/mac
 mac-defaults/base
 tmux
-brewfile-mac
+brewfile-mac-test
 vscode
