@@ -4,7 +4,6 @@ zsh-standard
 oh-my-zsh
 zshrc-imports
 zshrc-imports/mac
-mac-defaults/base
 tmux
 brewfile-mac-test
 vscode
