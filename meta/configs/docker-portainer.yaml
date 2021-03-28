@@ -6,4 +6,4 @@
       stderr: true
 
 - shell:
-  - 'docker-compose -f ~/.dotfiles/docker/portainer/docker-compose.yml up -d'
+  - 'docker-compose -f docker/portainer/docker-compose.yml up -d'
