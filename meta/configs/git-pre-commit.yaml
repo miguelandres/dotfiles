@@ -7,4 +7,4 @@
 
 - shell:
     - pip3 install pre-commit
-    - 'pre-commit install'
+    - PATH=$HOME/.local/bin:$PATH pre-commit install
