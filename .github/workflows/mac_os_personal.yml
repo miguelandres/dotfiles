@@ -13,6 +13,8 @@ on:
 jobs:
   config:
     runs-on: macos-latest
+    env:
+      TERM: xterm-256color
     steps:
       - uses: actions/checkout@v2
         with:
