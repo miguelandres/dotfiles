@@ -75,17 +75,48 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(alias-tips cargo common-aliases copydir copyfile dirhistory extract fancy-ctrl-z fasd git gitignore github history jsontools rust scala tmux zsh-interactive-cd zsh-completions zsh_reload)
+plugins=(
+  alias-tips
+  cargo
+  common-aliases
+  copydir
+  copyfile
+  dirhistory
+  extract
+  fancy-ctrl-z
+  fasd
+  git
+  gitignore
+  github
+  history
+  jsontools
+  rust
+  scala
+  tmux
+  zsh-interactive-cd
+  zsh-navigation-tools
+  zsh-completions
+  zsh_reload
+)
 for file in ~/.zshrc-imports/plugins/.*; do
   source "$file"
 done
-plugins+=(zsh-autosuggestions zsh-syntax-highlighting zsh-vim-mode)
+plugins+=(
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  history-substring-search
+  zsh-vim-mode)
 # Here for zsh-completions
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
