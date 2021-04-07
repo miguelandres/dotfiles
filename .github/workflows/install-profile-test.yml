@@ -12,7 +12,7 @@ on:
 
 jobs:
   mac-os-personal:
-    timeout-minutes: 20
+    timeout-minutes: 30
     runs-on: macos-latest
     env:
       TERM: xterm-256color
@@ -27,7 +27,7 @@ jobs:
         run: ./install-profile --pull --save-config mac-test mac-personal-test
 
   mac-os-twitter:
-    timeout-minutes: 20
+    timeout-minutes: 30
     runs-on: macos-latest
     env:
       TERM: xterm-256color
@@ -42,7 +42,7 @@ jobs:
         run: ./install-profile --pull --save-config mac-test mac-twitter
 
   ubuntu-personal:
-    timeout-minutes: 20
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     env:
       TERM: xterm-256color
