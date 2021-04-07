@@ -15,7 +15,6 @@ brew "sbt"
 brew "scala"
 brew "vim"
 
-cask "basictex"
 cask "discord"
 cask "github"
 cask "netnewswire"
