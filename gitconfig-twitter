@@ -19,3 +19,5 @@ pushInsteadOf = https://github.com/
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
+[commit]
+	template = /Users/myanezbarreto/.arc-commit-template.txt
