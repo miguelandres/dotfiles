@@ -1,9 +1,10 @@
 # Miguely's Dotfiles
 
+[![Test install profiles](https://github.com/miguelandres/dotfiles/actions/workflows/install-profile-test.yml/badge.svg)](https://github.com/miguelandres/dotfiles/actions/workflows/install-profile-test.yml)
+
 This repo uses [@anishathalye/dotbot](http://github.com/anishathalye/dotbot) for configuring my dotfiles and other utilities.
 
 ## Getting started (basic)
-
 
 ```sh
 git clone --recurse-submodules -j8 git@github.com:miguelandres/dotfiles.git ~/.dotfiles/
@@ -11,7 +12,6 @@ cd ~/.dotfiles/
 ```
 
 ## Getting started (With SSH auth)
-
 
 ```sh
 [ -f ~/.ssh/id_rsa ] || ssh-keygen -t rsa -b 4096 -C "miguelandres@users.noreply.github.com"
@@ -33,7 +33,6 @@ git clone --recurse-submodules -j8 git@github.com:miguelandres/dotfiles.git ~/.d
 cd ~/.dotfiles/
 ```
 
-
 ## Profiles and configs
 
 Since my dotfiles vary slightly between linux and mac, and whether this is personal or a work computer, I use a [more complicated system than the default](https://github.com/anishathalye/dotbot/wiki/Tips-and-Tricks#more-advanced-setup)
@@ -44,7 +43,8 @@ My modifications are as follows:
 * `meta/configs`: contains all regular configs. These configs can be referred to by a profile, and reused in multiple profiles.
 * `meta/profiles`: Contains profiles. Each profile is a list of `meta/configs` identifiers separated by `\n` and these are run in order.
 
-### Base Configs:
+### Base Configs
+
 * `base`
   * cleans up old symlinks
   * creates `~/.zshrc-imports` in preparation for all of the files that will be put there
@@ -55,6 +55,7 @@ My modifications are as follows:
   * Changes permissions to the directiories `brew` uses. This is only necessary in gmac.
 
 ### Profiles
+
 * `mac`: Base configuration, sets up oh-my-zsh, installs homebrew and all the apps I normally use.
   * `mac-personal`: Installs apps that are not allowed in corp (like MS Office) and things Santa complains about
   * `mac-cloud`: Installs  `docker`, `kubernetes` and `gcloud` using `brew`.
@@ -63,6 +64,7 @@ My modifications are as follows:
   * `glinux`: google specific imports. May move some of this off github.
 
 ### Configurations
+
 Each configuration is a list of base configs and a list of profiles to run. These are run in the order in which they were declared in the invocation.
 
 ## Known Issues
@@ -92,8 +94,8 @@ hit enter. Feel free to retry the same command.
 ./install-profile --pull --save-config mac mac-twitter
 ```
 
-
 ## Linux
+
 ### Raspberry pi
 
 ```sh
@@ -107,7 +109,6 @@ hit enter. Feel free to retry the same command.
 ```
 
 Look at mackup/mackup.cfg to see what will not be synced (or maybe customize it and just choose apps manually)
-
 
 ## Refresh configuration
 
