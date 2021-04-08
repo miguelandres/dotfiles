@@ -13,5 +13,6 @@
     ~/.vimrc: vim/vimrc
     ~/.vim/bundle/bbye: vim/bundle/bbye
     ~/.vim/bundle/Vundle.vim: vim/bundle/Vundle.vim
+    ~/.vim/after/ftplugin: vim/after/ftplugin
 - shell:
-   - 'vim -s vim/install.vimscript || vim -s vim/install.vimscript || echo "I give up, scripting vim installs is a pain in the ass."'
+    - 'vim -s vim/install.vimscript || vim -s vim/install.vimscript || echo "I give up, scripting vim installs is a pain in the ass."'
