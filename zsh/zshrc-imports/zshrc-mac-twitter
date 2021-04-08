@@ -1,5 +1,6 @@
-export VISUAL='code --wait --new-window'
-export EDITOR="$VISUAL"
+#export VISUAL='code --wait --new-window'
+export VISUAL='vim'
+export EDITOR="vim"
 export PATH=~/bin:$PATH
 
 ###-begin-web-script-content-###
