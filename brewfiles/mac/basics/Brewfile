@@ -18,6 +18,7 @@ brew "zsh-autosuggestions"
 
 cask "font-meslo-lg-nerd-font"
 
+cask "alfred"
 cask "disk-inventory-x"
 cask "firefox"
 cask "homebrew/cask-versions/firefox-developer-edition"
