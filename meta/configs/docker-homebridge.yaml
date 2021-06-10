@@ -13,3 +13,4 @@
   - 'docker exec homebridge npm install homebridge-pihole'
   - 'docker exec homebridge npm install homebridge-dyson-pure-cool'
   - 'docker exec homebridge npm install homebridge-config-ui-x'
+  - "docker exec homebridge npm install homebridge-eufy-robovac"

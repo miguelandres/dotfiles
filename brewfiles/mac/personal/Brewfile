@@ -7,15 +7,12 @@ cask_args appdir: '/Applications'
 
 brew "gh"
 
-# Youtubedl stuff
+# Youtube-dl stuff
 brew "youtube-dl"
 brew "ffmpeg"
 brew "aria2"
 
-
+# Streaming & Screen recording
 cask "obs"
-cask "soundflower"
-
-mas "Excel", id:462058435
-mas "PowerPoint", id:462062816
-mas "Word", id:462054704
+cask "blackhole-2ch"
+cask "blackhole-16ch"

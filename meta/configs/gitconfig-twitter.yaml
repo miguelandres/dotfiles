@@ -1,0 +1,9 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
+- link:
+    ~/.arc-commit-template.txt: arc-commit-template.txt
+    ~/.gitconfig: gitconfig-twitter

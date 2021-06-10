@@ -12,24 +12,24 @@ call vundle#begin()
 
   Plugin 'benmills/vimux'
   Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'derekwyatt/vim-scala'
   Plugin 'google/vim-maktaba'
-  Plugin 'google/vim-codefmt'
   Plugin 'google/vim-glaive'
+  Plugin 'google/vim-codefmt'
+  Plugin 'rust-lang/rust.vim'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'tpope/vim-sensible'
   "Not working on Raspberry pi
   "Plugin 'Valloric/MatchTagAlways'
   " Not working in my installs other than glinux
   "Plugin 'SirVer/ultisnips'
+  Bundle 'Rykka/riv.vim'
+
 
   " Snippets for ultisnips are separated from the engine. keep as last.
   "Plugin 'honza/vim-snippets'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-call glaive#Install()
-
-" Optional: Enable codefmt's default mappings on the <Leader>= prefix.
-Glaive codefmt plugin[mappings]
 
 filetype plugin indent on
 " syntax highlighting
@@ -37,6 +37,11 @@ syntax on
 " use » to mark Tabs and ° to mark trailing whitespace. This is a
 " non-obtrusive way to mark these special characters.
 set list listchars=tab:»\ ,trail:°
+
+call glaive#Install()
+
+" Optional: Enable codefmt's default mappings on the <Leader>= prefix.
+Glaive codefmt plugin[mappings]
 
 " Highlight the search term when you search for it.
 set hlsearch

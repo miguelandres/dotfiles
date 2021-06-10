@@ -4,32 +4,23 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 cask_args appdir: '/Applications'
 
-brew "go"
+# Moved to Brewfile_mas since it doesn't work on gh actions
+# brew "go"
 brew "graphviz"
+brew "markdownlint-cli"
+brew "nodejs"
 brew "pre-commit"
 brew "python"
 brew "python3"
+brew "rust"
 brew "sbt"
 brew "scala"
 brew "vim"
 
-cask "basictex"
 cask "discord"
 cask "github"
 cask "netnewswire"
+cask "signal"
 cask "steam"
 cask "visual-studio-code"
 cask "vlc"
-
-mas "GoodNotes", id:1444383602
-mas "Edison Mail", id:1489591003
-mas "Kakaotalk", id:869223134
-mas "Kindle", id:405399194
-mas "LINE", id:539883307
-mas "Microsoft OneNote", id:784801555
-mas "Parcel", id:639968404
-mas "Slack", id:803453959
-mas "Telegram", id:747648890
-mas "Twitter", id:1482454543
-mas "Wechat", id:836500024
-mas "WhatsApp", id:1147396723

@@ -1,0 +1,10 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
+- link:
+    ~/.zshrc-imports/.zshrc-mac-twitter: zsh/zshrc-imports/zshrc-mac-twitter
+    ~/.zshrc-imports/.aliases-mac-twitter: zsh/zshrc-imports/aliases-mac-twitter
+    ~/.zshrc-imports/plugins/.mac-twitter: zsh/zshrc-imports/plugins/mac-twitter

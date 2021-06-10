@@ -24,7 +24,7 @@
 [submodule "zsh/custom/plugins/zsh-vim-mode"]
 	path = zsh/custom/plugins/zsh-vim-mode
 	url = git@github.com:softmoth/zsh-vim-mode.git
-	branch = master
+	branch = main
 [submodule "vim/bundle/bbye"]
 	path = vim/bundle/bbye
 	url = git@github.com:moll/vim-bbye.git
@@ -36,3 +36,10 @@
 [submodule "dotbot-plugins/dotbot-vscode"]
 	path = dotbot-plugins/dotbot-vscode
 	url = git@github.com:hujianxin/dotbot-vscode.git
+[submodule "zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = zsh/custom/plugins/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+	branch = master
+[submodule "zsh/custom/plugins/zsh-autosuggestions"]
+	path = zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions

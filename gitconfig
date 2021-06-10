@@ -1,6 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Miguel Barreto
+  name = Miguel Barreto
 email = miguelandres@users.noreply.github.com
 
 # Force ssh to github
@@ -8,9 +8,9 @@ email = miguelandres@users.noreply.github.com
 pushInsteadOf = https://github.com/
 
 [pull]
-	rebase = false
+  rebase = false
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true

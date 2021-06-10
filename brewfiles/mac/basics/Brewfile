@@ -7,27 +7,24 @@ cask_args appdir: '/Applications'
 
 brew "dockutil"
 brew "fzf"
+brew "hub"
 brew "mas"
 brew "pre-commit"
+brew "shellcheck"
+brew "shfmt"
 brew "tmux"
 brew "zsh"
 brew "zsh-autosuggestions"
 
 cask "font-meslo-lg-nerd-font"
 
+cask "alfred"
 cask "disk-inventory-x"
 cask "firefox"
+cask "google-chrome"
 cask "homebrew/cask-versions/firefox-developer-edition"
 cask "logitech-options"
 cask "multifirefox"
-cask "google-chrome"
 cask "iterm2"
 cask "mysides"
 cask "witch"
-
-mas "BetterSnapTool", id:417375580
-mas "Dashlane", id:552383089
-mas "Dashlane for Safari", id:1505779553
-mas "Theine", id:955848755
-mas "Things", id:904280696
-mas "Tooth Fairy", id:1191449274

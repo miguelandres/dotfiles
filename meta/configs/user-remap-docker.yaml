@@ -8,4 +8,4 @@
 - shell:
   - '[[ ! $(grep -q docker /etc/group) ]] || sudo groupadd docker'
   - '[[ $((groups `whoami`) |grep "\bdocker\b") ]] || ( sudo gpasswd -a `whoami` docker )'
-  - '[[ -f "/etc/docker/daemon.json" ]] || (sudo mkdir /etc/docker && sudo cp ~/.dotfiles/etc-docker-daemon.json /etc/docker/daemon.json)'
+  - '[[ -f "/etc/docker/daemon.json" ]] || (sudo mkdir /etc/docker && sudo cp etc-docker-daemon.json /etc/docker/daemon.json)'

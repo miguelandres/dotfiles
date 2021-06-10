@@ -1,7 +1,10 @@
-**/Brewfile.lock.json
+**/Brewfile*.lock.json
 /refresh-dotfiles
 **/*.swp
 **/.DS_Store
+
+# VScode specific config
+.vscode/**
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

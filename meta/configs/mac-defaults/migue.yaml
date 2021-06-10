@@ -6,4 +6,4 @@
       stderr: true
 
 - shell:
-  - sh ~/.dotfiles/mac/defaults-migue
+  - sh mac/defaults-migue
