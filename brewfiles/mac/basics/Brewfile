@@ -20,7 +20,6 @@ cask "font-meslo-lg-nerd-font"
 
 cask "alfred"
 cask "disk-inventory-x"
-cask "dropbox"
 cask "firefox"
 cask "google-chrome"
 cask "homebrew/cask-versions/firefox-developer-edition"

@@ -8,6 +8,7 @@ cask_args appdir: '/Applications'
 # brew "go"
 brew "graphviz"
 brew "markdownlint-cli"
+brew "nodejs"
 brew "pre-commit"
 brew "python"
 brew "python3"
