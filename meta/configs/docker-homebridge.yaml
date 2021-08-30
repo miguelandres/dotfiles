@@ -6,11 +6,11 @@
       stderr: true
 
 - shell:
-    - "DIR=~/docker/homebridge; ( [[ ! -d $DIR ]] && mkdir -p $DIR && sudo chown -R dockremap:$USER $DIR && sudo chmod -R 775 $DIR) || true"
-    - "docker-compose -f docker/homebridge/docker-compose.yml up -d"
-    - "docker exec homebridge npm install homebridge-config-ui-x"
-    - "docker exec homebridge npm install homebridge-dyson-pure-cool"
-    - "docker exec homebridge npm install homebridge-eufy-robovac"
-    - "docker exec homebridge npm install homebridge-pihole"
-    - "docker exec homebridge npm install homebridge-smartthings-v2"
-    - "docker exec homebridge npm uninstall homebridge-dummy"
+  - 'DIR=~/docker/homebridge; ( [[ ! -d $DIR ]] && mkdir -p $DIR && sudo chown -R dockremap:$USER $DIR && sudo chmod -R 775 $DIR) || true'
+  - 'docker-compose -f ~/.dotfiles/docker/homebridge/docker-compose.yml up -d'
+  - 'docker exec homebridge npm uninstall homebridge-dummy'
+  - 'docker exec homebridge npm install homebridge-smartthings'
+  - 'docker exec homebridge npm install homebridge-pihole'
+  - 'docker exec homebridge npm install homebridge-dyson-pure-cool'
+  - 'docker exec homebridge npm install homebridge-config-ui-x'
+  - "docker exec homebridge npm install homebridge-eufy-robovac"
