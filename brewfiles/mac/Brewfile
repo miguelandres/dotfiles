@@ -16,6 +16,7 @@ brew "rust"
 brew "sbt"
 brew "scala"
 brew "vim"
+brew "yapf" #python formatter
 
 cask "discord"
 cask "github"
