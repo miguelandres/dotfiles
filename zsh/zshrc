@@ -87,7 +87,6 @@ plugins=(
   fasd
   git
   gitignore
-  github
   history
   jsontools
   rust

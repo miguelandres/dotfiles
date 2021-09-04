@@ -97,7 +97,7 @@ dockutil --add "/Applications/Google Chrome.app" --no-restart
 dockutil --add "/Applications/Edison Mail.app" --no-restart
 dockutil --add "/Applications/Adobe Lightroom CC/Adobe Lightroom.app" --no-restart
 dockutil --add "/System/Applications/Messages.app" --no-restart
-dockutil --add "/Applications/Dashlane/Dashlane.app" --no-restart
+dockutil --add "/Applications/Dashlane.localized/Dashlane.app" --no-restart
 dockutil --add "/Applications/Visual Studio Code.app" --no-restart
 dockutil --add "/Applications/iTerm.app" --no-restart
 dockutil --add "/Applications/Parcel.app" --no-restart

@@ -1,12 +1,14 @@
 [user]
         name = Miguel Yáñez-Barreto
         email = myanezbarreto@twitter.com
+	name = Miguel Andrés Yáñez-Barreto
+	email = myanezbarreto@twitter.com
 [diff]
-        renames = true
+	renames = true
 [http]
-        postBuffer = 524288000
+	postBuffer = 524288000
 [color]
-        ui = true
+	ui = true
 
 # Force ssh to github
 [url "git@github.com:"]
