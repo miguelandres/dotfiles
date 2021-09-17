@@ -1,0 +1,12 @@
+mac-basics
+vim
+zsh-standard
+oh-my-zsh
+zshrc-imports
+zshrc-imports/mac
+mac-defaults/base
+tmux
+brewfile-mac
+vscode
+brewfile-mac-personal
+zshrc-imports/mac-personal
