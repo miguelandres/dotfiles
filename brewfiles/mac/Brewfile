@@ -7,6 +7,7 @@ cask_args appdir: '/Applications'
 # Moved to Brewfile_mas since it doesn't work on gh actions
 # brew "go"
 brew "graphviz"
+brew "jupyterlab"
 brew "markdownlint-cli"
 brew "nodejs"
 brew "pre-commit"
@@ -21,6 +22,8 @@ brew "yapf" #python formatter
 
 cask "discord"
 cask "github"
+cask "jupyter-notebook-ql"
+cask "jupyter-notebook-viewer"
 cask "netnewswire"
 cask "signal"
 cask "spotify"
