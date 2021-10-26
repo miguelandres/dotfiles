@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-  name = Miguel Barreto
-email = miguelandres@users.noreply.github.com
+	name = Miguel Barreto
+	email = miguelandres@users.noreply.github.com
 
 # Force ssh to github
 [url "git@github.com:"]
@@ -14,3 +14,13 @@ pushInsteadOf = https://github.com/
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
+[core]
+	excludesfile = /Users/miguely/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/miguely/.stCommitMsg
