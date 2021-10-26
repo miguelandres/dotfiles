@@ -6,6 +6,7 @@ brew "gopls"
 brew "buildifier"
 cask "basictex"
 
+mas "BetterSnapTool", id:417375580
 mas "GoodNotes", id:1444383602
 mas "Edison Mail", id:1489591003
 mas "Kakaotalk", id:869223134
