@@ -33,9 +33,6 @@
 	path = dotbot-plugins/dotbot-brew
 	url = git@github.com:miguelandres/dotbot-brew.git
 	branch = main
-[submodule "dotbot-plugins/dotbot-vscode"]
-	path = dotbot-plugins/dotbot-vscode
-	url = git@github.com:hujianxin/dotbot-vscode.git
 [submodule "zsh/custom/plugins/zsh-syntax-highlighting"]
 	path = zsh/custom/plugins/zsh-syntax-highlighting
 	url = git@github.com:zsh-users/zsh-syntax-highlighting.git

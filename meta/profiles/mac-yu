@@ -7,6 +7,5 @@ zshrc-imports/mac
 mac-defaults/base
 tmux
 brewfile-mac
-vscode
 brewfile-mac-personal
 zshrc-imports/mac-personal
