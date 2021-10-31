@@ -5,7 +5,7 @@
       stdout: true
       stderr: true
     brewfile:
-      force_intel: true
+      force_intel: false
       auto_bootstrap: false
       stdin: true
       stdout: true
@@ -14,13 +14,13 @@
       create: true
       relink: true
 - installBrew:
-  - brew
-  - cask
+    - brew
+    - cask
 - link:
     ~/Library/LaunchAgents/sh.brew.update.plist: mac/sh.brew.update.plist
     ~/Library/LaunchAgents/sh.brew.upgrade.plist: mac/sh.brew.upgrade.plist
 - shell:
-  - launchctl load /Users/$USER/Library/LaunchAgents/sh.brew.update.plist
-  - launchctl load /Users/$USER/Library/LaunchAgents/sh.brew.upgrade.plist
+    - launchctl load /Users/$USER/Library/LaunchAgents/sh.brew.update.plist
+    - launchctl load /Users/$USER/Library/LaunchAgents/sh.brew.upgrade.plist
 - brewfile:
-  - brewfiles/mac/basics/Brewfile
+    - brewfiles/mac/basics/Brewfile
