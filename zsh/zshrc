@@ -96,7 +96,6 @@ plugins=(
   zsh-interactive-cd
   zsh-navigation-tools
   zsh-completions
-  zsh_reload
 )
 for file in ~/.zshrc-imports/plugins/.*; do
   source "$file"
