@@ -18,6 +18,7 @@
     - cask
 - shell:
     - echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    - source ~/.zprofile
 - link:
     ~/Library/LaunchAgents/sh.brew.update.plist: mac/sh.brew.update.plist
     ~/Library/LaunchAgents/sh.brew.upgrade.plist: mac/sh.brew.upgrade.plist
