@@ -12,6 +12,8 @@ brew "youtube-dl"
 brew "ffmpeg"
 brew "aria2"
 
+brew "adobe-creative-cloud"
+
 # Streaming & Screen recording
 cask "obs"
 cask "blackhole-2ch"
