@@ -1,6 +1,6 @@
 - defaults:
     brewfile:
-      force_intel: true
+      force_intel: false
       auto_bootstrap: false
       stdin: true
       stdout: true
