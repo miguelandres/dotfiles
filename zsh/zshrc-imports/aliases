@@ -1,5 +1,7 @@
 alias cdsrc="cd ~/src"
 
+alias ytdl="youtube-dl --external-downloader aria2c --external-downloader-args '-j 16 -x 16 -s 16 -k 1M'"
+
 # Get week number
 alias week='date +%V'
 
