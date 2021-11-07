@@ -6,4 +6,6 @@
       stdout: true
       stderr: true
 - brewfile:
-  - brewfiles/mac/basics/Brewfile_mas
+    - brewfiles/mac/basics/Brewfile_mas
+- shell:
+    - cp -Rf ~/.dotfiles/mac/Workflows/Services/* ~/Library/Services
