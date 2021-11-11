@@ -3,3 +3,4 @@ brew "mas"
 mas "Excel", id:462058435
 mas "PowerPoint", id:462062816
 mas "Word", id:462054704
+mas "Wechat", id:836500024

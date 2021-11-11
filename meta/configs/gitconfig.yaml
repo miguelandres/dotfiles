@@ -6,3 +6,4 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.commit-template.txt: commit-template.txt
