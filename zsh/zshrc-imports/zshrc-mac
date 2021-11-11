@@ -6,6 +6,6 @@ bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
-plugins+=(brew osx)
+plugins+=(brew macos)
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
