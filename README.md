@@ -76,6 +76,12 @@ Each configuration is a list of base configs and a list of profiles to run. Thes
 ./install-profile --pull --save-config mac mac-mati
 ```
 
+### Yu's mac
+
+```sh
+./install-profile --pull --save-config mac mac-yu
+```
+
 ### Work Mac
 
 ```sh
