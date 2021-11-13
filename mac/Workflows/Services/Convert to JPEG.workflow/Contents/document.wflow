@@ -653,7 +653,59 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}	tell application "Finder"		set parentDir to item 1 of input		set parentDir to container of parentDir		set outputFolder to choose folder with prompt "Please select an output folder:" default location (parentDir as alias)		set outputFolder to (outputFolder's POSIX path)		set output to {}				set max to input's length		set my progress total steps to max		repeat with i from 1 to length of input			set fileItem to item i of input			set filename to name of fileItem			set ext to fileItem's name extension			set extLen to length of ext			set extLen to extLen + 1			set basename to characters 1 thru -(extLen + 1) of filename as string			set dest to outputFolder &amp; "____.jpg"			set source to fileItem as string			my exportToJpeg(source, dest)			set newFile to (dest as POSIX file)			copy newFile to end of output			set my progress completed steps to i		end repeat		return output	end tellend runon exportToJpegPhotoshop(src, dest)	tell application "Adobe Photoshop (BETA)"		launch		open file src		repeat with doc in documents			set p to doc's file path as string			if p is equal to src then				#save in file dest as JPEG with options {quality:9, format options:"optimized"} with copying				export in dest as save for web with options {optimized size:true, quality:100, with profile:false, web format:"JPEG"}			end if		end repeat	end tellend exportToJpegPhotoshopon exportToJpeg(src, dest)	tell application "Image Events"		launch		set srcFile to file src		set destFile to file dest		set imageDoc to open srcFile		save imageDoc as JPEG in destFile		close imageDoc	end tellend exportToJpeg</string>
+					<string>on run {input, parameters}
+	tell application "Finder"
+		set parentDir to item 1 of input
+		set parentDir to container of parentDir
+		set outputFolder to choose folder with prompt "Please select an output folder:" default location (parentDir as alias)
+		set outputFolder to (outputFolder's POSIX path)
+		set output to {}
+
+		set max to input's length
+		set my progress total steps to max
+		repeat with i from 1 to length of input
+			set fileItem to item i of input
+			set filename to name of fileItem
+			set ext to fileItem's name extension
+			set extLen to length of ext
+			set extLen to extLen + 1
+			set basename to characters 1 thru -(extLen + 1) of filename as string
+			set dest to outputFolder &amp; "____.jpg"
+			set source to fileItem as string
+			my exportToJpeg(source, dest)
+			set newFile to (dest as POSIX file)
+			copy newFile to end of output
+			set my progress completed steps to i
+		end repeat
+		return output
+	end tell
+end run
+
+on exportToJpegPhotoshop(src, dest)
+	tell application "Adobe Photoshop (BETA)"
+		launch
+		open file src
+		repeat with doc in documents
+			set p to doc's file path as string
+			if p is equal to src then
+				#save in file dest as JPEG with options {quality:9, format options:"optimized"} with copying
+				export in dest as save for web with options {optimized size:true, quality:100, with profile:false, web format:"JPEG"}
+			end if
+		end repeat
+	end tell
+end exportToJpegPhotoshop
+
+
+on exportToJpeg(src, dest)
+	tell application "Image Events"
+		launch
+		set srcFile to file src
+		set destFile to file dest
+		set imageDoc to open srcFile
+		save imageDoc as JPEG in destFile
+		close imageDoc
+	end tell
+end exportToJpeg</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -691,9 +743,9 @@
 					<dict>
 						<key>default value</key>
 						<string>on run {input, parameters}
-	
+
 	(* Your script goes here *)
-	
+
 	return input
 end run</string>
 						<key>name</key>
