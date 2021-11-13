@@ -646,7 +646,71 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on addLeadingZerosToNumber(theNumber, theMaxLeadingZeroCount)	-- Determine if the number is negative	set isNegative to theNumber is less than 0		-- Determine when the maximum number of digits will be reached	set theThreshold to (10 ^ theMaxLeadingZeroCount) as integer		-- If the number is shorter than the maximum number of digits	if theNumber is less than theThreshold then		-- If the number is negative, convert it to positive		if isNegative = true then set theNumber to -theNumber				-- Add the zeros to the number		set theLeadingZeros to ""		set theDigitCount to length of ((theNumber div 1) as string)		set theCharacterCount to (theMaxLeadingZeroCount + 1) - theDigitCount		repeat theCharacterCount times			set theLeadingZeros to (theLeadingZeros &amp; "0") as string		end repeat				-- Make the number negative, if it was previously negative		if isNegative = true then set theLeadingZeros to "-" &amp; theLeadingZeros				-- Return the prefixed number		return (theLeadingZeros &amp; (theNumber as text)) as string				-- If the number is greater than or equal to the maximum number of digits	else		-- Return the original number		return theNumber as text	end ifend addLeadingZerosToNumberon run {input, parameters}	tell application "Finder"		set fileItem to item 1 of input		set parentDirectory to fileItem's container as text		set filename to name of fileItem		set basename to filename		set ext to fileItem's name extension		set extLen to length of ext		set extLen to extLen + 1		set basename to characters 1 thru -(extLen + 1) of basename as string				set dialogResult to display dialog "Enter a starting number:" default answer "1"		try			set currentNumber to (text returned of dialogResult) as integer		end try				set basename to text returned of (display dialog "Enter base name:" default answer basename)				set i to 2		repeat (input's length) - 1 times			set imageFile to the item i of input			set numberStr to my addLeadingZerosToNumber(currentNumber, 2)			set newName to (numberStr &amp; " " &amp; basename &amp; ".jpg")			set i to i + 1			set currentNumber to currentNumber + 1			set imageFile to (move imageFile to folder parentDirectory)			set name of imageFile to newName		end repeat	end tell		returnend run</string>
+					<string>on addLeadingZerosToNumber(theNumber, theMaxLeadingZeroCount)
+	-- Determine if the number is negative
+	set isNegative to theNumber is less than 0
+
+	-- Determine when the maximum number of digits will be reached
+	set theThreshold to (10 ^ theMaxLeadingZeroCount) as integer
+
+	-- If the number is shorter than the maximum number of digits
+	if theNumber is less than theThreshold then
+		-- If the number is negative, convert it to positive
+		if isNegative = true then set theNumber to -theNumber
+
+		-- Add the zeros to the number
+		set theLeadingZeros to ""
+		set theDigitCount to length of ((theNumber div 1) as string)
+		set theCharacterCount to (theMaxLeadingZeroCount + 1) - theDigitCount
+		repeat theCharacterCount times
+			set theLeadingZeros to (theLeadingZeros &amp; "0") as string
+		end repeat
+
+		-- Make the number negative, if it was previously negative
+		if isNegative = true then set theLeadingZeros to "-" &amp; theLeadingZeros
+
+		-- Return the prefixed number
+		return (theLeadingZeros &amp; (theNumber as text)) as string
+
+		-- If the number is greater than or equal to the maximum number of digits
+	else
+		-- Return the original number
+		return theNumber as text
+	end if
+end addLeadingZerosToNumber
+
+on run {input, parameters}
+	tell application "Finder"
+		set fileItem to item 1 of input
+		set parentDirectory to fileItem's container as text
+		set filename to name of fileItem
+		set basename to filename
+		set ext to fileItem's name extension
+		set extLen to length of ext
+		set extLen to extLen + 1
+		set basename to characters 1 thru -(extLen + 1) of basename as string
+
+		set dialogResult to display dialog "Enter a starting number:" default answer "1"
+		try
+			set currentNumber to (text returned of dialogResult) as integer
+		end try
+
+		set basename to text returned of (display dialog "Enter base name:" default answer basename)
+
+		set i to 2
+		repeat (input's length) - 1 times
+			set imageFile to the item i of input
+			set numberStr to my addLeadingZerosToNumber(currentNumber, 2)
+			set newName to (numberStr &amp; " " &amp; basename &amp; ".jpg")
+			set i to i + 1
+			set currentNumber to currentNumber + 1
+			set imageFile to (move imageFile to folder parentDirectory)
+			set name of imageFile to newName
+		end repeat
+	end tell
+
+	return
+end run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -682,9 +746,9 @@
 					<dict>
 						<key>default value</key>
 						<string>on run {input, parameters}
-	
+
 	(* Your script goes here *)
-	
+
 	return input
 end run</string>
 						<key>name</key>
