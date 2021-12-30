@@ -7,6 +7,7 @@ cask_args appdir: '/Applications'
 
 # Moved to Brewfile_mas since it doesn't work on gh actions
 # brew "go"
+brew "alda"
 brew "dezoomify-rs"
 brew "graphviz"
 brew "jupyterlab"
