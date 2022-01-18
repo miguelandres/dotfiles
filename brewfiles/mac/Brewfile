@@ -14,6 +14,7 @@ brew "jupyterlab"
 brew "markdownlint-cli"
 brew "nailgun"
 brew "nodejs"
+# Eww, this is because of php in alfred workflows
 brew "php"
 brew "pre-commit"
 brew "pylint"
