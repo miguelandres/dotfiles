@@ -78,7 +78,6 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(
   alias-tips
   bazel
-  cargo
   common-aliases
   copydir
   copyfile

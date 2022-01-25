@@ -7,12 +7,14 @@ cask_args appdir: '/Applications'
 
 # Moved to Brewfile_mas since it doesn't work on gh actions
 # brew "go"
+brew "alda"
 brew "dezoomify-rs"
 brew "graphviz"
 brew "jupyterlab"
 brew "markdownlint-cli"
 brew "nailgun"
 brew "nodejs"
+# Eww, this is because of php in alfred workflows
 brew "php"
 brew "pre-commit"
 brew "pylint"
