@@ -15,6 +15,7 @@ export PATH=$HOME/.cargo/env:$HOME/bin:/opt/homebrew:/usr/local/bin:$HOME/.local
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=vim
+alias blaze=bazel
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -79,8 +80,7 @@ plugins=(
   alias-tips
   bazel
   common-aliases
-  copydir
-  copyfile
+  copypath
   dirhistory
   extract
   fancy-ctrl-z
