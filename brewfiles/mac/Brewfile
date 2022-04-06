@@ -10,6 +10,7 @@ cask_args appdir: '/Applications'
 # brew "go"
 brew "alda"
 brew "dezoomify-rs"
+brew "exiftool"
 brew "graphviz"
 brew "jupyterlab"
 brew "markdownlint-cli"
