@@ -6,6 +6,6 @@ zshrc-imports
 zshrc-imports/mac
 mac-defaults/base
 tmux
-brewfile-mac
-brewfile-mac-personal
+brewfile-mac-test
+brewfile-mac-personal-test
 zshrc-imports/mac-personal

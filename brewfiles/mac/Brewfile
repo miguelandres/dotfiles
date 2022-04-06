@@ -3,15 +3,19 @@ brew "cask"
 tap "homebrew/cask"
 tap "miguelandres/homebrew-tap"
 tap "homebrew/cask-fonts"
+tap "spotify/public"
 cask_args appdir: '/Applications'
 
 # Moved to Brewfile_mas since it doesn't work on gh actions
 # brew "go"
+brew "alda"
 brew "dezoomify-rs"
 brew "graphviz"
 brew "jupyterlab"
 brew "markdownlint-cli"
+brew "nailgun"
 brew "nodejs"
+# Eww, this is because of php in alfred workflows
 brew "php"
 brew "pre-commit"
 brew "pylint"
@@ -20,6 +24,7 @@ brew "python3"
 brew "rustup"
 brew "sbt"
 brew "scala"
+brew "scio"
 brew "vim"
 brew "yapf" #python formatter
 

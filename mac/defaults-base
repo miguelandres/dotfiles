@@ -106,22 +106,25 @@ sudo systemsetup -settimezone "America/New_York" >/dev/null
 sudo pmset -a lidwake 1
 
 # Restart automatically on power loss
-sudo pmset -a autorestart 1
+sudo pmset -a autorestart 0
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
 
-# Sleep the display after 15 minutes
-sudo pmset -a displaysleep 15
+# Sleep the display after 10 minutes while charging
+sudo pmset -c displaysleep 10
 
-# Disable machine sleep while charging
+# Sleep the display after 5 minutes while on battery
+sudo pmset -b displaysleep 5
+
+# Set machine sleep to 15 mins on power adapter
 sudo pmset -c sleep 15
 
-# Set machine sleep to 5 minutes on battery
-sudo pmset -b sleep 15
+# Set machine sleep to 7 minutes on battery
+sudo pmset -b sleep 7
 
 # Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+sudo pmset -a standbydelay 3600
 
 ###############################################################################
 # Screen                                                                      #

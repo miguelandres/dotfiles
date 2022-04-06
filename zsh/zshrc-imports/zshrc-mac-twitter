@@ -1,4 +1,5 @@
 #export VISUAL='code --wait --new-window'
+export PATH=$PATH:/opt/twitter_mde/managed_development_environment/playbooks/roles/mde.python/files/temp_compat_python2.7_bin
 export VISUAL='vim'
 export EDITOR="vim"
 export PATH=~/bin:$PATH
