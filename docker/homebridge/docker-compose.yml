@@ -1,7 +1,7 @@
 version: '3'
 services:
   homebridge:
-    image: oznu/homebridge:raspberry-pi
+    image: oznu/homebridge:latest
     container_name: homebridge
     restart: always
     mac_address: 28:F6:55:6E:3F:04
@@ -23,7 +23,7 @@ networks:
   br6:
     driver: macvlan
     driver_opts:
-      parent: eth0
+      parent: enxb827eb3ab21e
     ipam:
       driver: default
       config:
