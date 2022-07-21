@@ -4,15 +4,27 @@ services:
     image: oznu/homebridge:latest
     container_name: homebridge
     restart: always
-    network_mode: host
-    userns_mode: host
+    mac_address: 28:F6:55:6E:3F:04
+    networks:
+      br6:
+        ipv4_address: 192.168.6.2
     ports:
-      - "8080:8080"
+      - "80:80"
       # Samsung Smartthings incoming port
       - "12345:12345"
     environment:
       - TZ=America/New_York
       - HOMEBRIDGE_CONFIG_UI=1
-      - HOMEBRIDGE_CONFIG_UI_PORT=8080
+      - HOMEBRIDGE_CONFIG_UI_PORT=80
     volumes:
       - ~/docker/homebridge:/homebridge
+
+networks:
+  br6:
+    driver: macvlan
+    driver_opts:
+      parent: enxb827eb3ab21e
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.6.0/24

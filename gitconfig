@@ -15,7 +15,7 @@ pushInsteadOf = https://github.com/
   process = git-lfs filter-process
   required = true
 [core]
-	excludesfile = /Users/miguely/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -23,4 +23,4 @@ pushInsteadOf = https://github.com/
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/miguely/.commit-template.txt
+	template = $HOME/.commit-template.txt
