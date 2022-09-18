@@ -14,7 +14,6 @@ brew "exiftool"
 brew "graphviz"
 brew "jupyterlab"
 brew "markdownlint-cli"
-brew "nailgun"
 brew "nodejs"
 brew "openssl"
 # Eww, this is because of php in alfred workflows
