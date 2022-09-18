@@ -1,5 +1,4 @@
 version: '3.7'
-
 services:
   zwavejs2mqtt:
     container_name: zwavejs2mqtt
@@ -24,8 +23,6 @@ services:
 
   mosquitto:
     image: eclipse-mosquitto
-    container_name: mosquitto
-    restart: always
     volumes:
       - ~/docker/mosquitto:/mosquitto/:rw
     mac_address: 28:F6:77:77:77:77
@@ -50,7 +47,6 @@ services:
       - HOMEBRIDGE_CONFIG_UI_PORT=80
     volumes:
       - ~/docker/homebridge:/homebridge
-
   homeassistant:
     image: ghcr.io/home-assistant/home-assistant:stable
     container_name: homeassistant
