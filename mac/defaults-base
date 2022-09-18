@@ -106,7 +106,7 @@ sudo systemsetup -settimezone "America/New_York" >/dev/null
 sudo pmset -a lidwake 1
 
 # Restart automatically on power loss
-sudo pmset -a autorestart 0
+sudo pmset -a autorestart 1
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
