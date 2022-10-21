@@ -9,3 +9,6 @@ bindkey "^[e" end-of-line
 plugins+=(brew macos)
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ANDROID_SDK_ROOT=/opt/homebrew/share/android-commandlinetools
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"

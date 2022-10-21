@@ -8,22 +8,17 @@
 			<key>NSBackgroundColorName</key>
 			<string>background</string>
 			<key>NSIconName</key>
-			<string>NSTouchBarMore</string>
+			<string>NSTouchBarTransferDownload</string>
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>Trim Video</string>
+				<string>Save Youtube Video</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>
-			<key>NSRequiredContext</key>
-			<dict>
-				<key>NSApplicationIdentifier</key>
-				<string>com.apple.finder</string>
-			</dict>
-			<key>NSSendFileTypes</key>
+			<key>NSSendTypes</key>
 			<array>
-				<string>public.movie</string>
+				<string>public.utf8-plain-text</string>
 			</array>
 		</dict>
 	</array>
