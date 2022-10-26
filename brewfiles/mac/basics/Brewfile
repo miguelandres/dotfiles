@@ -5,6 +5,9 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-drivers"
 cask_args appdir: '/Applications'
 
+# ruby stuff
+brew "ruby"
+
 brew "dockutil"
 brew "fzf"
 brew "hub"
