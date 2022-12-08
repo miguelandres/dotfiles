@@ -41,17 +41,17 @@ jobs:
       - name: install
         run: ./install-profile --pull --save-config mac-test mac-twitter
 
-  ubuntu-personal:
-    timeout-minutes: 30
-    runs-on: ubuntu-latest
-    env:
-      TERM: xterm-256color
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-      - name: "Submodules"
-        run: git submodule update --init --recursive --remote
+  # ubuntu-personal:
+  #   timeout-minutes: 30
+  #   runs-on: ubuntu-latest
+  #   env:
+  #     TERM: xterm-256color
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         submodules: true
+  #     - name: "Submodules"
+  #       run: git submodule update --init --recursive --remote
 
-      - name: install
-        run: ./install-profile --pull --save-config linux linux-personal linux-gui
+  #     - name: install
+  #       run: ./install-profile --pull --save-config linux linux-personal linux-gui
