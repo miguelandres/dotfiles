@@ -17,9 +17,9 @@ services:
       - '/dev/serial/by-id/usb-Silicon_Labs_HubZ_Smart_Home_Controller_31600458-if00-port0:/dev/zwave'
     volumes:
       - ~/docker/zwavejs2mqtt:/usr/src/app/store #- ~/docker/zwavejsui:/usr/src/app/store
-    ports:
-      - '8091:8091' # port for web interface
-      - '3000:3000' # port for Z-Wave JS websocket server
+    # ports:
+    #   - '8091:8091' # port for web interface
+    #   - '3000:3000' # port for Z-Wave JS websocket server
 
   mosquitto:
     image: eclipse-mosquitto
@@ -71,6 +71,24 @@ services:
     volumes:
       - ~/docker/homepage:/app/config
       - /var/run/docker.sock:/var/run/docker.sock
+
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    mac_address: 28:F6:55:56:00:00
+    networks:
+      vlan:
+        ipv4_address: 192.168.6.4
+    environment:
+      TZ: 'America/New_York'
+    volumes:
+      - '~/docker/pihole-data/etc/pihole/:/etc/pihole/'
+      - '~/docker/pihole-data/etc/dnsmasq.d/:/etc/dnsmasq.d/'
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: always
+
 networks:
   vlan:
     driver: macvlan
