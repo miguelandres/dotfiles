@@ -23,6 +23,7 @@ services:
 
   mosquitto:
     image: eclipse-mosquitto
+    container_name: mosquitto
     volumes:
       - ~/docker/mosquitto:/mosquitto/:rw
     mac_address: 28:F6:77:77:77:77
@@ -67,7 +68,7 @@ services:
       - PORT=80
     networks:
       vlan:
-        ipv4_address: 192.168.6.5
+        ipv4_address: 192.168.6.15
     volumes:
       - ~/docker/homepage:/app/config
       - /var/run/docker.sock:/var/run/docker.sock
@@ -78,7 +79,11 @@ services:
     mac_address: 28:F6:55:56:00:00
     networks:
       vlan:
-        ipv4_address: 192.168.6.4
+        ipv4_address: 192.168.6.5
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "80:80/tcp"
     environment:
       TZ: 'America/New_York'
     volumes:
@@ -87,7 +92,7 @@ services:
     dns:
       - 8.8.8.8
       - 8.8.4.4
-    restart: always
+    restart: unless-stopped
 
 networks:
   vlan:
