@@ -1,16 +1,12 @@
 version: '3'
 
 services:
-  portainer:
-    container_name: portainer
-    image: portainer/portainer-ce
-    command: -H unix:///var/run/docker.sock
+  portainer_agent:
+    container_name: portainer_agent
+    image: portainer/agent
     restart: always
     ports:
-      - 443:9443
+      - 9001:9001
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
-
-volumes:
-  portainer_data:
+      - /var/lib/docker/volumes:/var/lib/docker/volumes
