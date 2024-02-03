@@ -2,6 +2,9 @@
 
 [![Test install profiles](https://github.com/miguelandres/dotfiles/actions/workflows/install-profile-test.yml/badge.svg)](https://github.com/miguelandres/dotfiles/actions/workflows/install-profile-test.yml)
 
+> [!CAUTION]
+> This repo is archived and no longer maintained, see [@miguelandres/dotfiles-v2](http://github.com/miguelandres/dotfiles-v2) for the maintained version.
+
 This repo uses [@anishathalye/dotbot](http://github.com/anishathalye/dotbot) for configuring my dotfiles and other utilities.
 
 ## Getting started (basic)
